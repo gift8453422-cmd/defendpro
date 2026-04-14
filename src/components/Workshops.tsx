@@ -1,30 +1,34 @@
 import { motion } from 'motion/react';
 import { Building2, Shield, Award, Clock, Users2, CheckCircle2 } from 'lucide-react';
 
+import imgCorporate from '../assets/media/corporate-1.jpg';
+import imgWomenSafety from '../assets/media/womensafety.jpg';
+import imgOneAndOne from '../assets/media/one-and-one.jpg';
+
 const sectors = [
   { 
     name: 'Corporate', 
-    img: '/corporate-1.jpg',
+    img: imgCorporate,
   },
   { 
     name: 'Women Groups', 
-    img: '/womensafety.jpg',
+    img: imgWomenSafety,
   },
   { 
     name: 'Societies', 
-    img: '/womensafety.jpg',
+    img: imgWomenSafety,
   },
   { 
     name: 'NGOs', 
-    img: '/womensafety.jpg',
+    img: imgWomenSafety,
   },
   {
     name: 'Education Institutes',
-    img: '/corporate-1.jpg',
+    img: imgCorporate,
   },
   {
     name: 'Personal 1-on-1 Training',
-    img: '/one-and-one.jpg',
+    img: imgOneAndOne,
   }
 ];
 
@@ -76,7 +80,6 @@ export default function Workshops() {
                   src={sector.img} 
                   className="absolute inset-0 w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700"
                   alt={sector.name}
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-4 md:p-6 w-full">

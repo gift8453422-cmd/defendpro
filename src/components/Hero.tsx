@@ -1,10 +1,8 @@
 import { motion } from 'motion/react';
 import { Shield, Users, MapPin } from 'lucide-react';
+import heroVideo from '../assets/media/hero.mp4';
 
 export default function Hero() {
-  // Direct URL for the new optimized 4MB video version
-  const videoUrl = "/hero.mp4";
-
   return (
     <section className="relative h-[100vh] min-h-[100svh] w-full m-0 p-0 flex items-end overflow-hidden bg-tactical-bg">
       {/* Background with cinematic video */}
@@ -19,7 +17,7 @@ export default function Hero() {
           disableRemotePlayback
           className="w-full h-full object-cover"
         >
-          <source src={videoUrl} type="video/mp4" />
+          <source src={heroVideo} type="video/mp4" />
         </video>
       </div>
 

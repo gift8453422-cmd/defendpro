@@ -1,20 +1,23 @@
 import { motion } from 'motion/react';
 import { Shield, Award, Star } from 'lucide-react';
 
+import img19965 from '../assets/media/19965.jpg';
+import img19990 from '../assets/media/19990.jpg';
+
 const instructors = [
   {
     name: 'Ravi',
     role: 'Lead Tactical Instructor',
     expertise: 'Tactical Combat & Self-Defense',
     bio: 'With over a decade of experience in martial arts and tactical training, Ravi specializes in high-pressure combat scenarios and real-world defense techniques. He has trained hundreds of individuals in effective survival strategies.',
-    image: '/19965.jpg'
+    image: img19965
   },
   {
     name: 'Specialist X',
     role: 'Tactical Specialist',
     expertise: 'Stealth & Urban Survival',
     bio: 'A specialist in urban survival and situational awareness, our anonymous instructor brings years of field experience in security and tactical operations. Expertise includes threat detection and non-verbal de-escalation.',
-    image: '/19990.jpg'
+    image: img19990
   }
 ];
 
@@ -46,7 +49,6 @@ export default function Instructors() {
                   src={instructor.image} 
                   alt={instructor.name}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-tactical-bg via-transparent to-transparent"></div>
               </div>
