@@ -3,7 +3,7 @@ import { Shield, Users, MapPin } from 'lucide-react';
 
 export default function Hero() {
   // Direct URL for the new optimized 4MB video version
-  const videoUrl = "/hero.mp4";
+  const videoUrl = "/video.mp4";
 
   return (
     <section className="relative h-[100vh] min-h-[100svh] w-full m-0 p-0 flex items-end overflow-hidden bg-tactical-bg">
