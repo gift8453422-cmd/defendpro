@@ -4,7 +4,7 @@ import { Building2, Shield, Award, Clock, Users2, CheckCircle2 } from 'lucide-re
 const sectors = [
   { 
     name: 'Corporate', 
-    img: '/corporate 1.jpg',
+    img: '/corporate-1.jpg',
   },
   { 
     name: 'Women Groups', 
@@ -20,11 +20,11 @@ const sectors = [
   },
   {
     name: 'Education Institutes',
-    img: '/corporate 1.jpg',
+    img: '/corporate-1.jpg',
   },
   {
     name: 'Personal 1-on-1 Training',
-    img: '/one and one.jpg',
+    img: '/one-and-one.jpg',
   }
 ];
 

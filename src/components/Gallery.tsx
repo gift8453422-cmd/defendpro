@@ -137,6 +137,7 @@ export default function Gallery() {
                 alt={image.title}
                 className="w-full h-full object-cover select-none"
                 loading="eager"
+                referrerPolicy="no-referrer"
               />
               
               <div 
