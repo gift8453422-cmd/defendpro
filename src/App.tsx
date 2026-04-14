@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProblemSection from './components/ProblemSection';
 import Workshops from './components/Workshops';
+import Instructors from './components/Instructors';
 import Blog from './components/Blog';
 import Gallery from './components/Gallery';
 import HowItWorks from './components/HowItWorks';
@@ -123,6 +124,8 @@ export default function App() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-tactical-primary rounded-full"></div>
           </div>
         </section>
+
+        <Instructors />
 
         <Workshops />
         <Gallery />

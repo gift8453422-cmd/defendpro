@@ -16,6 +16,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Mission', href: '#mission' },
+    { name: 'Instructors', href: '#instructors' },
     { name: 'Workshops', href: '#workshops' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Blog', href: '#blog' },
@@ -31,6 +32,7 @@ export default function Navbar() {
             src="/newlogo.jpeg" 
             alt="DefendPro Academy" 
             className="h-[44px] w-auto object-contain mix-blend-screen" 
+            style={{ marginLeft: '48px' }}
           />
         </a>
 
