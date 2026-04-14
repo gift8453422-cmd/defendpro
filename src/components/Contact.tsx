@@ -42,34 +42,21 @@ export default function Contact() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-10 border-t border-tactical-muted/10">
-              <a 
-                href="mailto:defendproacademy@gmail.com"
-                className="flex flex-col items-center lg:items-start gap-1 group/item transition-colors hover:text-tactical-primary"
-              >
-                <Mail className="text-tactical-primary group-hover/item:scale-110 transition-transform" size={20} />
+              <div className="flex flex-col items-center lg:items-start gap-1">
+                <Mail className="text-tactical-primary" size={20} />
                 <p className="text-[8px] font-headline font-bold text-tactical-muted uppercase tracking-widest">Email</p>
-                <p className="text-xs font-bold text-tactical-text group-hover/item:text-tactical-primary">defendproacademy@gmail.com</p>
-              </a>
-              <a 
-                href="https://instagram.com/defendproacademy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center lg:items-start gap-1 group/item transition-colors hover:text-tactical-primary"
-              >
-                <Instagram className="text-tactical-primary group-hover/item:scale-110 transition-transform" size={20} />
+                <p className="text-xs font-bold text-tactical-text">defendproacademy@gmail.com</p>
+              </div>
+              <div className="flex flex-col items-center lg:items-start gap-1">
+                <Instagram className="text-tactical-primary" size={20} />
                 <p className="text-[8px] font-headline font-bold text-tactical-muted uppercase tracking-widest">Instagram</p>
-                <p className="text-xs font-bold text-tactical-text group-hover/item:text-tactical-primary">@defendproacademy</p>
-              </a>
-              <a 
-                href="https://www.google.com/maps/search/?api=1&query=Mumbai, Maharashtra"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center lg:items-start gap-1 group/item transition-colors hover:text-tactical-primary"
-              >
-                <MapPin className="text-tactical-primary group-hover/item:scale-110 transition-transform" size={20} />
+                <p className="text-xs font-bold text-tactical-text">@defendproacademy</p>
+              </div>
+              <div className="flex flex-col items-center lg:items-start gap-1">
+                <MapPin className="text-tactical-primary" size={20} />
                 <p className="text-[8px] font-headline font-bold text-tactical-muted uppercase tracking-widest">Location</p>
-                <p className="text-xs font-bold text-tactical-text group-hover/item:text-tactical-primary">Mumbai, Maharashtra</p>
-              </a>
+                <p className="text-xs font-bold text-tactical-text">Mumbai, Maharashtra</p>
+              </div>
             </div>
           </motion.div>
 
@@ -142,9 +129,10 @@ export default function Contact() {
                     id="interest" 
                     name="interest"
                     required
+                    defaultValue=""
                     className="bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-tactical-primary transition-colors appearance-none"
                   >
-                    <option value="" disabled selected>Select an option...</option>
+                    <option value="" disabled>Select an option...</option>
                     <option value="Personal Training">Personal 1-on-1 Training</option>
                     <option value="Corporate Workshop">Corporate Workshop</option>
                     <option value="Women Safety">Women Safety Group</option>

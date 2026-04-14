@@ -3,7 +3,7 @@ import { Shield, Users, MapPin } from 'lucide-react';
 
 export default function Hero() {
   // Direct URL for the new optimized 4MB video version
-  const videoUrl = "https://firebasestorage.googleapis.com/v0/b/sharktank-475811.firebasestorage.app/o/Genz%20Ai%20University%20Create%20An%208-Second%20High-Energy%20Cinematic%20Video%20With%204%20Intense%20Sho.mp4?alt=media";
+  const videoUrl = "/video.mp4";
 
   return (
     <section className="relative h-[100vh] min-h-[100svh] w-full m-0 p-0 flex items-end overflow-hidden bg-tactical-bg">

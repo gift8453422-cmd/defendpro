@@ -115,20 +115,23 @@ export default function Gallery() {
           return (
             <div
               key={index}
-              className="absolute w-[260px] md:w-[400px] h-[300px] md:h-[450px] rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 ease-out"
+              className="absolute w-[260px] md:w-[400px] h-[300px] md:h-[450px] rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out"
               style={{
-                transform: `translateX(${translateX}%) scale(${scale}) rotateY(${rotateY}deg)`,
+                left: '50%',
+                top: '50%',
+                transform: `translate(calc(-50% + ${translateX}%), -50%) scale(${scale}) rotateY(${rotateY}deg)`,
                 zIndex: zIndex,
                 opacity: opacity,
-                boxShadow: diff === 0 ? '0 20px 40px rgba(0,0,0,0.5)' : 'none',
+                boxShadow: diff === 0 ? '0 25px 50px -12px rgba(220, 38, 38, 0.25)' : 'none',
+                backfaceVisibility: 'hidden',
               }}
               onClick={() => setCurrentIndex(index)}
             >
               <img 
                 src={image.url} 
                 alt={image.title}
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover select-none"
+                loading="eager"
               />
               
               <div 
