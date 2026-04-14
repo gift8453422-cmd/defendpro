@@ -7,14 +7,14 @@ const instructors = [
     role: 'Lead Tactical Instructor',
     expertise: 'Tactical Combat & Self-Defense',
     bio: 'With over a decade of experience in martial arts and tactical training, Ravi specializes in high-pressure combat scenarios and real-world defense techniques. He has trained hundreds of individuals in effective survival strategies.',
-    image: '/19965.jpg'
+    image: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=800&auto=format&fit=crop'
   },
   {
     name: 'Specialist X',
     role: 'Tactical Specialist',
     expertise: 'Stealth & Urban Survival',
     bio: 'A specialist in urban survival and situational awareness, our anonymous instructor brings years of field experience in security and tactical operations. Expertise includes threat detection and non-verbal de-escalation.',
-    image: '/19990.jpg'
+    image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop'
   }
 ];
 

@@ -3,47 +3,47 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
   {
-    url: "/19965.jpg",
+    url: "https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=800&auto=format&fit=crop",
     title: "Tactical Drills",
     category: "Tactical"
   },
   {
-    url: "/19990.jpg",
+    url: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop",
     title: "Strength & Conditioning",
     category: "Fitness"
   },
   {
-    url: "/20012.jpg",
+    url: "https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=800&auto=format&fit=crop",
     title: "Combat Basics",
     category: "Training"
   },
   {
-    url: "/19996.jpg",
+    url: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop",
     title: "Self Defense Workshop",
     category: "Workshop"
   },
   {
-    url: "/20038.jpg",
+    url: "https://images.unsplash.com/photo-1526506114642-5405a1a120ce?q=80&w=800&auto=format&fit=crop",
     title: "Team Vanguard",
     category: "Community"
   },
   {
-    url: "/20029.jpg",
+    url: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop",
     title: "Elite Performance",
     category: "Training"
   },
   {
-    url: "/20174.jpg",
+    url: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=800&auto=format&fit=crop",
     title: "Awareness",
     category: "Tactical"
   },
   {
-    url: "/19965.jpg",
+    url: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop",
     title: "Personal Training",
     category: "Fitness"
   },
   {
-    url: "/20197.jpg",
+    url: "https://images.unsplash.com/photo-1552674605-171ff3ea36f6?q=80&w=800&auto=format&fit=crop",
     title: "Readiness",
     category: "Tactical"
   }
