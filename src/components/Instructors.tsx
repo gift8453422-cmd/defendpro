@@ -7,14 +7,14 @@ const instructors = [
     role: 'Lead Tactical Instructor',
     expertise: 'Tactical Combat & Self-Defense',
     bio: 'With over a decade of experience in martial arts and tactical training, Ravi specializes in high-pressure combat scenarios and real-world defense techniques. He has trained hundreds of individuals in effective survival strategies.',
-    image: '/instructor-ravi.jpg' // Assuming you will upload one of the images as instructor-ravi.jpg
+    image: '/19965.jpg'
   },
   {
     name: 'Specialist X',
     role: 'Tactical Specialist',
     expertise: 'Stealth & Urban Survival',
     bio: 'A specialist in urban survival and situational awareness, our anonymous instructor brings years of field experience in security and tactical operations. Expertise includes threat detection and non-verbal de-escalation.',
-    image: '/instructor-x.jpg' // Assuming you will upload one of the images as instructor-x.jpg
+    image: '/19990.jpg'
   }
 ];
 
