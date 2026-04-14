@@ -55,7 +55,7 @@ export default function Gallery() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 2500);
+    }, 4000); // Slowed down from 2500ms to 4000ms
     return () => clearInterval(timer);
   }, []);
 
@@ -151,8 +151,8 @@ export default function Gallery() {
           );
         })}
         
-        {/* Navigation Arrows */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-4 z-30">
+        {/* Navigation Arrows - Moved lower to avoid overlapping text */}
+        <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex gap-4 z-30">
           <button onClick={handlePrev} className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 hover:border-tactical-primary/50 transition-all backdrop-blur-sm">
             <ChevronLeft size={20} />
           </button>
