@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="w-full px-4 py-3 flex justify-between items-center">
         <a href="#" className="flex items-center shrink-0">
           <img 
-            src="/logo.jpeg" 
+            src="/newlogo.jpeg" 
             alt="DefendPro Academy" 
             className="h-[44px] w-auto object-contain mix-blend-screen" 
           />
