@@ -38,7 +38,7 @@ const images = [
     category: "Tactical"
   },
   {
-    url: "/20069.jpg",
+    url: "/19965.jpg",
     title: "Personal Training",
     category: "Fitness"
   },

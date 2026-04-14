@@ -75,21 +75,21 @@ export default function Contact() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-10 border-t border-tactical-muted/10">
-              <div className="flex flex-col items-center lg:items-start gap-1">
-                <Mail className="text-tactical-primary" size={20} />
+              <a href="mailto:defendproacademy@gmail.com" className="flex flex-col items-center lg:items-start gap-1 group">
+                <Mail className="text-tactical-primary group-hover:scale-110 transition-transform" size={20} />
                 <p className="text-[8px] font-headline font-bold text-tactical-muted uppercase tracking-widest">Email</p>
-                <p className="text-xs font-bold text-tactical-text">defendproacademy@gmail.com</p>
-              </div>
-              <div className="flex flex-col items-center lg:items-start gap-1">
-                <Instagram className="text-tactical-primary" size={20} />
+                <p className="text-xs font-bold text-tactical-text group-hover:text-tactical-primary transition-colors">defendproacademy@gmail.com</p>
+              </a>
+              <a href="https://instagram.com/defendproacademy" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center lg:items-start gap-1 group">
+                <Instagram className="text-tactical-primary group-hover:scale-110 transition-transform" size={20} />
                 <p className="text-[8px] font-headline font-bold text-tactical-muted uppercase tracking-widest">Instagram</p>
-                <p className="text-xs font-bold text-tactical-text">@defendproacademy</p>
-              </div>
-              <div className="flex flex-col items-center lg:items-start gap-1">
-                <MapPin className="text-tactical-primary" size={20} />
+                <p className="text-xs font-bold text-tactical-text group-hover:text-tactical-primary transition-colors">@defendproacademy</p>
+              </a>
+              <a href="https://maps.google.com/?q=Mumbai,Maharashtra" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center lg:items-start gap-1 group">
+                <MapPin className="text-tactical-primary group-hover:scale-110 transition-transform" size={20} />
                 <p className="text-[8px] font-headline font-bold text-tactical-muted uppercase tracking-widest">Location</p>
-                <p className="text-xs font-bold text-tactical-text">Mumbai, Maharashtra</p>
-              </div>
+                <p className="text-xs font-bold text-tactical-text group-hover:text-tactical-primary transition-colors">Mumbai, Maharashtra</p>
+              </a>
             </div>
           </motion.div>
 
