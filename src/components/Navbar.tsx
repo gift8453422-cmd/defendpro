@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import logoImg from '../assets/media/newlogo.jpeg';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +29,7 @@ export default function Navbar() {
       <div className="w-full px-4 py-3 flex justify-between items-center">
         <a href="#" className="flex items-center shrink-0">
           <img 
-            src={logoImg} 
+            src="/newlogo.jpeg" 
             alt="DefendPro Academy" 
             className="h-[44px] w-auto object-contain mix-blend-screen" 
             style={{ marginLeft: '48px' }}

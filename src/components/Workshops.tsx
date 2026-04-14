@@ -1,34 +1,30 @@
 import { motion } from 'motion/react';
 import { Building2, Shield, Award, Clock, Users2, CheckCircle2 } from 'lucide-react';
 
-import imgCorporate from '../assets/media/corporate-1.jpg';
-import imgWomenSafety from '../assets/media/womensafety.jpg';
-import imgOneAndOne from '../assets/media/one-and-one.jpg';
-
 const sectors = [
   { 
     name: 'Corporate', 
-    img: imgCorporate,
+    img: '/corporate-1.jpg',
   },
   { 
     name: 'Women Groups', 
-    img: imgWomenSafety,
+    img: '/womensafety.jpg',
   },
   { 
     name: 'Societies', 
-    img: imgWomenSafety,
+    img: '/womensafety.jpg',
   },
   { 
     name: 'NGOs', 
-    img: imgWomenSafety,
+    img: '/womensafety.jpg',
   },
   {
     name: 'Education Institutes',
-    img: imgCorporate,
+    img: '/corporate-1.jpg',
   },
   {
     name: 'Personal 1-on-1 Training',
-    img: imgOneAndOne,
+    img: '/one-and-one.jpg',
   }
 ];
 

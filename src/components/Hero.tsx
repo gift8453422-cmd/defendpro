@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
 import { Shield, Users, MapPin } from 'lucide-react';
-import heroVideo from '../assets/media/hero.mp4';
 
 export default function Hero() {
   return (
@@ -17,7 +16,7 @@ export default function Hero() {
           disableRemotePlayback
           className="w-full h-full object-cover"
         >
-          <source src={heroVideo} type="video/mp4" />
+          <source src="/hero.mp4" type="video/mp4" />
         </video>
       </div>
 

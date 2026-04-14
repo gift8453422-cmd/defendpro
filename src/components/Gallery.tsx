@@ -1,58 +1,49 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-import img19965 from '../assets/media/19965.jpg';
-import img19990 from '../assets/media/19990.jpg';
-import img20012 from '../assets/media/20012.jpg';
-import img19996 from '../assets/media/19996.jpg';
-import img20038 from '../assets/media/20038.jpg';
-import img20029 from '../assets/media/20029.jpg';
-import img20174 from '../assets/media/20174.jpg';
-import img20197 from '../assets/media/20197.jpg';
-
 const images = [
   {
-    url: img19965,
+    url: "/19965.jpg",
     title: "Tactical Drills",
     category: "Tactical"
   },
   {
-    url: img19990,
+    url: "/19990.jpg",
     title: "Strength & Conditioning",
     category: "Fitness"
   },
   {
-    url: img20012,
+    url: "/20012.jpg",
     title: "Combat Basics",
     category: "Training"
   },
   {
-    url: img19996,
+    url: "/19996.jpg",
     title: "Self Defense Workshop",
     category: "Workshop"
   },
   {
-    url: img20038,
+    url: "/20038.jpg",
     title: "Team Vanguard",
     category: "Community"
   },
   {
-    url: img20029,
+    url: "/20029.jpg",
     title: "Elite Performance",
     category: "Training"
   },
   {
-    url: img20174,
+    url: "/20174.jpg",
     title: "Awareness",
     category: "Tactical"
   },
   {
-    url: img19965,
+    url: "/19965.jpg",
     title: "Personal Training",
     category: "Fitness"
   },
   {
-    url: img20197,
+    url: "/20197.jpg",
     title: "Readiness",
     category: "Tactical"
   }
