@@ -1,11 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-import { useEffect } from 'react';
-import { doc, getDocFromServer } from 'firebase/firestore';
-import { db } from './lib/firebase';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProblemSection from './components/ProblemSection';
@@ -21,18 +13,6 @@ import FloatingButtons from './components/FloatingButtons';
 import { motion } from 'motion/react';
 
 export default function App() {
-  useEffect(() => {
-    async function testConnection() {
-      try {
-        await getDocFromServer(doc(db, 'test', 'connection'));
-      } catch (error) {
-        if (error instanceof Error && error.message.includes('the client is offline')) {
-          console.error("Please check your Firebase configuration.");
-        }
-      }
-    }
-    testConnection();
-  }, []);
 
   return (
     <div className="min-h-screen bg-tactical-bg selection:bg-tactical-primary selection:text-tactical-bg">
