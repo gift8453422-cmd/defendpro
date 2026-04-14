@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="w-full px-4 py-3 flex justify-between items-center">
         <a href="#" className="flex items-center shrink-0">
           <img 
-            src="https://firebasestorage.googleapis.com/v0/b/sharktank-475811.firebasestorage.app/o/newlogo.jpeg?alt=media" 
+            src="/logo.jpeg" 
             alt="DefendPro Academy" 
             className="h-[44px] w-auto object-contain mix-blend-screen" 
           />
