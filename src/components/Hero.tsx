@@ -16,7 +16,7 @@ export default function Hero() {
           disableRemotePlayback
           className="w-full h-full object-cover"
         >
-          <source src="https://cdn.pixabay.com/video/2020/05/25/40131-424917409_large.mp4" type="video/mp4" />
+          <source src="/hero.mp4" type="video/mp4" />
         </video>
       </div>
 

@@ -28,9 +28,12 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-[1000] transition-all duration-300 border-b bg-black border-white/10">
       <div className="w-full px-4 py-3 flex justify-between items-center">
         <a href="#" className="flex items-center shrink-0">
-          <div className="h-[44px] flex items-center justify-center text-white font-bold text-xl tracking-widest ml-12">
-            DEFEND<span className="text-tactical-primary">PRO</span>
-          </div>
+          <img 
+            src="/newlogo.jpeg" 
+            alt="DefendPro Academy" 
+            className="h-[44px] w-auto object-contain mix-blend-screen" 
+            style={{ marginLeft: '48px' }}
+          />
         </a>
 
         {/* Desktop Nav */}
