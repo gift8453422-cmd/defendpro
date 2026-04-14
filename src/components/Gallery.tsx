@@ -3,44 +3,49 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
   {
-    url: "https://firebasestorage.googleapis.com/v0/b/sharktank-475811.firebasestorage.app/o/Gallery%2F19990.jpg?alt=media",
+    url: "/19965.jpg",
     title: "Tactical Drills",
     category: "Tactical"
   },
   {
-    url: "https://firebasestorage.googleapis.com/v0/b/sharktank-475811.firebasestorage.app/o/Gallery%2F19996.jpg?alt=media",
+    url: "/19990.jpg",
     title: "Strength & Conditioning",
     category: "Fitness"
   },
   {
-    url: "https://firebasestorage.googleapis.com/v0/b/sharktank-475811.firebasestorage.app/o/Gallery%2F20012.jpg?alt=media",
+    url: "/20012.jpg",
     title: "Combat Basics",
     category: "Training"
   },
   {
-    url: "https://firebasestorage.googleapis.com/v0/b/sharktank-475811.firebasestorage.app/o/Gallery%2F20029.jpg?alt=media",
+    url: "/19996.jpg",
     title: "Self Defense Workshop",
     category: "Workshop"
   },
   {
-    url: "https://firebasestorage.googleapis.com/v0/b/sharktank-475811.firebasestorage.app/o/Gallery%2F20038.jpg?alt=media",
+    url: "/20038.jpg",
     title: "Team Vanguard",
     category: "Community"
   },
   {
-    url: "https://firebasestorage.googleapis.com/v0/b/sharktank-475811.firebasestorage.app/o/Gallery%2F20174.jpg?alt=media",
+    url: "/20029.jpg",
     title: "Elite Performance",
     category: "Training"
   },
   {
-    url: "https://firebasestorage.googleapis.com/v0/b/sharktank-475811.firebasestorage.app/o/Gallery%2F20197.jpg?alt=media",
+    url: "/20174.jpg",
     title: "Awareness",
     category: "Tactical"
   },
   {
-    url: "https://firebasestorage.googleapis.com/v0/b/sharktank-475811.firebasestorage.app/o/Gallery%2Fone%20and%20one.jpg?alt=media",
+    url: "/20069.jpg",
     title: "Personal Training",
     category: "Fitness"
+  },
+  {
+    url: "/20197.jpg",
+    title: "Readiness",
+    category: "Tactical"
   }
 ];
 
