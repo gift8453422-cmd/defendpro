@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-tactical-bg: #171310;
+  --color-tactical-primary: #ff5f1f;
+  --color-tactical-secondary: #e9c349;
+  --color-tactical-surface: #1f1b18;
+  --color-tactical-text: #eae1db;
+  --color-tactical-muted: #aa897f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-tactical-bg text-tactical-text font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+
+  section {
+    margin: 0;
+  }
+
+  section + section {
+    margin-top: 0;
+  }
+
+  section > *:last-child {
+    margin-bottom: 0;
+  }
+
+  h1, h2, p {
+    margin-top: 0;
+  }
+}
+
+.text-shadow-tactical {
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+.bg-tactical-gradient {
+  background: linear-gradient(135deg, #ffb59c 0%, #ff5f1f 100%);
+}
