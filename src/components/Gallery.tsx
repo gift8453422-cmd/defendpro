@@ -3,49 +3,44 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
   {
-    url: "/19965.jpg",
+    url: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776295675/20197_d4cqaz.jpg",
     title: "Tactical Drills",
     category: "Tactical"
   },
   {
-    url: "/19990.jpg",
+    url: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776295676/20174_ejxdnv.jpg",
     title: "Strength & Conditioning",
     category: "Fitness"
   },
   {
-    url: "/20012.jpg",
+    url: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776295677/20029_pmmd8m.jpg",
     title: "Combat Basics",
     category: "Training"
   },
   {
-    url: "/19996.jpg",
+    url: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776295676/20038_dal9sk.jpg",
     title: "Self Defense Workshop",
     category: "Workshop"
   },
   {
-    url: "/20038.jpg",
+    url: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776295677/20012_shscil.jpg",
     title: "Team Vanguard",
     category: "Community"
   },
   {
-    url: "/20029.jpg",
+    url: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776295678/19996_kpxjkv.jpg",
     title: "Elite Performance",
     category: "Training"
   },
   {
-    url: "/20174.jpg",
+    url: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776295678/19965_cx2m9l.jpg",
     title: "Awareness",
     category: "Tactical"
   },
   {
-    url: "/19965.jpg",
+    url: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776295679/19990_i2r9dm.jpg",
     title: "Personal Training",
     category: "Fitness"
-  },
-  {
-    url: "/20197.jpg",
-    title: "Readiness",
-    category: "Tactical"
   }
 ];
 

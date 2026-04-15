@@ -21,7 +21,7 @@ export default function ProblemSection() {
   ];
 
   return (
-    <section className="bg-tactical-surface py-24 px-6 relative overflow-hidden z-[2] border-b border-white/5">
+    <section className="bg-tactical-surface pt-0 pb-24 px-6 relative overflow-hidden z-10 -mt-10 border-b border-white/5">
       {/* Background Danger Accent */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-tactical-primary/5 -skew-x-12 translate-x-1/2"></div>
       

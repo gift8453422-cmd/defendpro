@@ -57,11 +57,11 @@ export default function Workshops() {
         </div>
 
         {/* A. WHO IT’S FOR (IMAGE CARDS) */}
-        <div className="mb-32">
-          <h3 className="text-3xl md:text-4xl font-headline font-bold text-tactical-secondary uppercase mb-16 border-l-[6px] border-tactical-secondary pl-8 tracking-tight">
+        <div className="mb-16">
+          <h3 className="text-3xl md:text-4xl font-headline font-bold text-tactical-secondary uppercase mb-12 border-l-[6px] border-tactical-secondary pl-8 tracking-tight">
             Who It's For
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {sectors.map((sector, index) => (
               <motion.div 
                 key={sector.name}
@@ -86,7 +86,7 @@ export default function Workshops() {
         </div>
 
         {/* B. WHAT WE TEACH (APPLE-STYLE PREMIUM) */}
-        <div className="mb-32 pt-24 border-t border-white/5">
+        <div className="mb-16 pt-16 border-t border-white/5">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -124,7 +124,7 @@ export default function Workshops() {
         </div>
 
         {/* C. WHY YOU (TRUST STRIP) - APPLE STYLE */}
-        <div className="pt-24 border-t border-white/5">
+        <div className="pt-16 border-t border-white/5">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

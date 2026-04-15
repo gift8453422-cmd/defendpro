@@ -22,6 +22,16 @@
   --color-tactical-muted: #71717a;
 }
 
+/* Global Section Resets for Seamless Merging */
+section {
+  margin: 0;
+  display: flow-root;
+}
+
+section > *:last-child {
+  margin-bottom: 0;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
