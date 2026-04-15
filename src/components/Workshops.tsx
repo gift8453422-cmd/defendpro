@@ -4,27 +4,27 @@ import { Building2, Shield, Award, Clock, Users2, CheckCircle2 } from 'lucide-re
 const sectors = [
   { 
     name: 'Corporate', 
-    img: '/corporate-1.jpg',
+    img: 'https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776294241/corporate_1_egerbn.jpg',
   },
   { 
     name: 'Women Groups', 
-    img: '/womensafety.jpg',
+    img: 'https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776294240/womensafety_1_ernchj.jpg',
   },
   { 
     name: 'Societies', 
-    img: '/womensafety.jpg',
+    img: 'https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776294240/womensafety_1_ernchj.jpg',
   },
   { 
     name: 'NGOs', 
-    img: '/womensafety.jpg',
+    img: 'https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776294240/womensafety_1_ernchj.jpg',
   },
   {
     name: 'Education Institutes',
-    img: '/corporate-1.jpg',
+    img: 'https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776294241/corporate_1_egerbn.jpg',
   },
   {
     name: 'Personal 1-on-1 Training',
-    img: '/one-and-one.jpg',
+    img: 'https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776294240/one_and_one_ot6rnz.jpg',
   }
 ];
 
