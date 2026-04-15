@@ -42,8 +42,8 @@ export default function Hero() {
           </div>
 
           <h1 
-            className="text-white leading-[0.85] tracking-tighter mb-10 uppercase font-headline font-black"
-            style={{ fontSize: 'clamp(3rem, 8vw, 86px)', fontFamily: 'Courier New, Courier, monospace' }}
+            className="text-white leading-[0.85] tracking-tighter mb-10 uppercase font-backfired font-normal"
+            style={{ fontSize: 'clamp(3rem, 8vw, 86px)' }}
             aria-label="One incident changes everything"
           >
             ONE<br />

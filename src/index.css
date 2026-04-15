@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Backfired';
+  src: url('/Backfired.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-headline: "Space Grotesk", sans-serif;
   --font-body: "Inter", sans-serif;
+  --font-backfired: "Backfired", sans-serif;
 
   --color-tactical-bg: #0b0b0b;
   --color-tactical-primary: #ff5f1f;
