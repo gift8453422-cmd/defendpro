@@ -14,44 +14,60 @@ export default function Hero() {
           preload="auto"
           disablePictureInPicture
           disableRemotePlayback
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-60"
         >
           <source src="/hero.mp4" type="video/mp4" />
         </video>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0b] via-transparent to-transparent"></div>
       </div>
-
-      {/* Gradient Fade to next section */}
-      <div className="absolute inset-0 z-10 pointer-events-none" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0) 60%, #1f1b18 100%)' }}></div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-6 w-full pb-24 md:pb-32">
         {/* Left Text */}
         <motion.div 
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-3xl"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="max-w-4xl"
         >
-          <div className="flex items-center gap-3 mb-6">
-            <span className="font-headline text-xs font-bold text-tactical-primary tracking-[0.4em] uppercase">
-              Status: Operational
+          <div className="flex items-center gap-4 mb-8">
+            <span className="font-headline text-xs font-bold text-tactical-primary tracking-[0.5em] uppercase">
+              STATUS: OPERATIONAL
             </span>
-            <div className="flex gap-1">
-              <div className="w-2 h-2 bg-tactical-primary"></div>
-              <div className="w-2 h-2 bg-tactical-primary"></div>
-              <div className="w-2 h-2 bg-tactical-primary"></div>
-              <div className="w-2 h-2 bg-tactical-muted/30"></div>
+            <div className="flex gap-1.5">
+              <div className="w-1.5 h-1.5 bg-tactical-primary"></div>
+              <div className="w-1.5 h-1.5 bg-tactical-primary"></div>
+              <div className="w-1.5 h-1.5 bg-tactical-primary"></div>
+              <div className="w-1.5 h-1.5 bg-white/20"></div>
             </div>
           </div>
 
           <h1 
-            className="text-tactical-text leading-[0.9] tracking-tighter mb-6 uppercase drop-shadow-2xl"
-            style={{ fontFamily: 'Courier New', fontSize: '53px', fontWeight: '900', textShadow: '0 4px 24px rgba(0,0,0,0.8)' }}
+            className="text-white leading-[0.85] tracking-tighter mb-10 uppercase font-headline font-black"
+            style={{ fontSize: 'clamp(3rem, 8vw, 86px)', fontFamily: 'Courier New, Courier, monospace' }}
+            aria-label="One incident changes everything"
           >
             ONE<br />
             INCIDENT<br />
             <span className="text-tactical-primary">CHANGES</span><br />
-            EVERYTHING
+            EVERYTHING.
           </h1>
+
+          <div className="flex flex-wrap gap-6">
+            <a 
+              href="#contact" 
+              className="bg-tactical-primary text-tactical-bg px-10 py-5 font-headline font-black uppercase tracking-widest hover:-translate-y-1 transition-all duration-500 rounded-sm shadow-2xl shadow-tactical-primary/20"
+              aria-label="Initiate tactical training"
+            >
+              Initiate Training
+            </a>
+            <a 
+              href="#mission" 
+              className="bg-white/5 backdrop-blur-md border border-white/10 text-white px-10 py-5 font-headline font-black uppercase tracking-widest hover:bg-white/10 transition-all duration-500 rounded-sm"
+              aria-label="Learn about our mission"
+            >
+              Our Mission
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>

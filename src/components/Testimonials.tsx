@@ -42,53 +42,53 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-10 md:py-[60px] bg-tactical-bg px-6 border-t border-white/5">
+    <section id="testimonials" className="py-24 bg-tactical-bg px-6 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-10 md:mb-16">
-          <h2 className="text-4xl md:text-6xl font-headline font-black text-tactical-text uppercase tracking-tighter mb-4">
-            CLIENT <span className="text-tactical-primary">FEEDBACK</span>
+        <div className="text-center mb-24">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-8 leading-tight">
+            CLIENT <span className="text-tactical-secondary">FEEDBACK</span>
           </h2>
-          <p className="text-tactical-muted tracking-widest uppercase text-sm font-bold">
-            Real reviews from real people
+          <p className="text-stone-500 tracking-[0.4em] uppercase text-xs font-bold">
+            REAL REVIEWS FROM REAL PEOPLE.
           </p>
         </div>
 
-        <div className="relative w-full overflow-hidden py-4">
+        <div className="relative w-full overflow-hidden py-10">
           {/* Gradient Masks for smooth fade on edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-r from-tactical-bg to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-tactical-bg to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-12 md:w-48 bg-gradient-to-r from-tactical-bg to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-12 md:w-48 bg-gradient-to-l from-tactical-bg to-transparent z-10 pointer-events-none"></div>
 
           <motion.div
-            className="flex gap-6 w-max"
+            className="flex gap-8 w-max"
             animate={{ x: ["0%", "-50%"] }}
             transition={{
               repeat: Infinity,
               ease: "linear",
-              duration: 40,
+              duration: 50,
             }}
           >
             {[...testimonials, ...testimonials].map((t, i) => (
               <div
                 key={i}
-                className="w-[320px] md:w-[400px] shrink-0 bg-[#0b0b0b] border border-white/5 p-8 rounded-2xl flex flex-col justify-between group hover:border-tactical-primary/30 transition-colors duration-500"
+                className="w-[320px] md:w-[450px] shrink-0 bg-[#0b0b0b] border border-white/5 p-10 rounded-sm flex flex-col justify-between group hover:border-tactical-primary/30 transition-all duration-700"
               >
               <div>
-                <div className="flex gap-1 mb-6">
+                <div className="flex gap-1 mb-8">
                   {[...Array(t.rating)].map((_, index) => (
-                    <Star key={index} className="fill-tactical-primary text-tactical-primary" size={18} />
+                    <Star key={index} className="fill-tactical-primary text-tactical-primary" size={16} />
                   ))}
                 </div>
-                <p className="text-tactical-text/80 leading-relaxed font-light mb-8">
+                <p className="text-stone-400 leading-relaxed font-light mb-10 text-base italic">
                   "{t.text}"
                 </p>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-tactical-primary/10 flex items-center justify-center text-tactical-primary font-headline font-bold text-xl group-hover:bg-tactical-primary group-hover:text-black transition-colors duration-500">
+              <div className="flex items-center gap-5">
+                <div className="w-14 h-14 rounded-full bg-tactical-primary/10 flex items-center justify-center text-tactical-primary font-headline font-bold text-2xl group-hover:bg-tactical-primary group-hover:text-black transition-all duration-700">
                   {t.initial}
                 </div>
                 <div>
-                  <h4 className="text-white font-headline font-bold">{t.name}</h4>
-                  <p className="text-tactical-muted text-xs uppercase tracking-wider">Verified Student</p>
+                  <h4 className="text-white font-headline font-bold uppercase tracking-tight">{t.name}</h4>
+                  <p className="text-stone-500 text-[10px] uppercase tracking-[0.2em] font-bold">Verified Student</p>
                 </div>
               </div>
             </div>

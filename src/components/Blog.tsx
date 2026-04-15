@@ -23,18 +23,18 @@ const posts = [
 
 export default function Blog() {
   return (
-    <section id="blog" className="py-10 md:py-[60px] bg-tactical-bg px-6">
+    <section id="blog" className="py-24 bg-tactical-bg px-6 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-10 md:mb-16">
-          <h2 className="text-4xl md:text-6xl font-headline font-black text-tactical-text uppercase tracking-tighter mb-4">
-            TACTICAL <span className="text-tactical-primary">INSIGHTS</span>
+        <div className="text-center mb-24">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-8 leading-tight">
+            TACTICAL <span className="text-tactical-secondary">INSIGHTS</span>
           </h2>
-          <p className="text-tactical-muted tracking-widest uppercase text-sm font-bold">
-            Intelligence for the modern guardian
+          <p className="text-stone-500 tracking-[0.4em] uppercase text-xs font-bold">
+            INTELLIGENCE FOR THE MODERN GUARDIAN.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {posts.map((post, index) => (
             <motion.article 
               key={index}
@@ -42,28 +42,28 @@ export default function Blog() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-tactical-surface border border-tactical-muted/10 overflow-hidden group"
+              className="bg-tactical-surface border border-white/5 overflow-hidden group rounded-sm"
             >
               <div className="aspect-video overflow-hidden">
                 <img 
                   src={post.image} 
                   alt={post.title}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="p-8">
-                <span className="text-tactical-primary font-headline font-bold text-xs tracking-widest uppercase mb-3 block">
+              <div className="p-10">
+                <span className="text-tactical-primary font-headline font-bold text-xs tracking-[0.2em] uppercase mb-4 block">
                   {post.date}
                 </span>
-                <h3 className="text-2xl font-headline font-bold text-tactical-text uppercase mb-4 group-hover:text-tactical-primary transition-colors">
+                <h3 className="text-2xl font-headline font-bold text-tactical-text uppercase mb-6 group-hover:text-tactical-primary transition-colors tracking-tight leading-tight">
                   {post.title}
                 </h3>
-                <p className="text-tactical-text/70 mb-6 font-light leading-relaxed">
+                <p className="text-stone-400 mb-8 font-light leading-relaxed text-base">
                   {post.excerpt}
                 </p>
-                <a href="#contact" className="inline-block text-tactical-text font-headline font-bold text-sm uppercase tracking-widest border-b-2 border-tactical-primary pb-1 hover:text-tactical-primary transition-colors">
-                  Read Intelligence
+                <a href="#contact" className="inline-flex items-center gap-2 text-tactical-text font-headline font-bold text-xs uppercase tracking-[0.2em] group/link">
+                  <span className="border-b-2 border-tactical-primary pb-1 group-hover/link:text-tactical-primary transition-colors">Read Intelligence</span>
                 </a>
               </div>
             </motion.article>

@@ -5,48 +5,54 @@
   --font-headline: "Space Grotesk", sans-serif;
   --font-body: "Inter", sans-serif;
 
-  --color-tactical-bg: #171310;
+  --color-tactical-bg: #0b0b0b;
   --color-tactical-primary: #ff5f1f;
   --color-tactical-secondary: #e9c349;
-  --color-tactical-surface: #1f1b18;
-  --color-tactical-text: #eae1db;
-  --color-tactical-muted: #aa897f;
+  --color-tactical-surface: #121212;
+  --color-tactical-text: #ffffff;
+  --color-tactical-muted: #71717a;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   body {
-    @apply bg-tactical-bg text-tactical-text font-body;
+    @apply bg-tactical-bg text-tactical-text font-body overflow-x-hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-headline;
+    @apply font-headline tracking-tighter;
   }
 
-  section {
-    margin: 0;
-  }
-
-  section + section {
-    margin-top: 0;
-  }
-
-  section > *:last-child {
-    margin-bottom: 0;
-  }
-
-  h1, h2, p {
-    margin-top: 0;
+  p {
+    @apply leading-relaxed;
   }
 }
 
 .text-shadow-tactical {
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.9);
 }
 
 .bg-tactical-gradient {
-  background: linear-gradient(135deg, #ffb59c 0%, #ff5f1f 100%);
+  background: linear-gradient(135deg, #ff5f1f 0%, #ff3f00 100%);
+}
+
+::selection {
+  @apply bg-tactical-primary text-tactical-bg;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-tactical-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 hover:bg-tactical-primary/50 transition-colors;
 }

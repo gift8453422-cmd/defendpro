@@ -25,31 +25,30 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-[1000] transition-all duration-300 border-b bg-black border-white/10">
-      <div className="w-full px-4 py-3 flex justify-between items-center">
+    <nav className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 border-b ${scrolled ? 'bg-black/95 backdrop-blur-md border-white/10 py-2' : 'bg-transparent border-transparent py-4'}`}>
+      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center shrink-0">
           <img 
             src="/newlogo.png" 
             alt="DefendPro Academy" 
-            className="h-[44px] w-auto object-contain mix-blend-screen" 
-            style={{ marginLeft: '48px' }}
+            className="h-12 md:h-16 w-auto object-contain" 
           />
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex gap-6 items-center">
+        <div className="hidden md:flex gap-8 items-center">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-white/80 hover:text-white font-headline tracking-wide uppercase transition-colors text-sm"
+              className="text-stone-300 hover:text-tactical-primary font-headline tracking-[0.1em] uppercase transition-all text-xs font-bold"
             >
               {link.name}
             </a>
           ))}
           <a 
             href="#contact" 
-            className="bg-[#ff6a00] text-white px-4 py-2.5 rounded-md font-headline font-bold uppercase tracking-wide hover:-translate-y-0.5 transition-all duration-300 text-sm ml-2"
+            className="bg-tactical-primary text-tactical-bg px-6 py-3 rounded-sm font-headline font-black uppercase tracking-widest hover:-translate-y-1 transition-all duration-500 text-xs ml-4 shadow-lg shadow-tactical-primary/10"
           >
             ENLIST NOW
           </a>

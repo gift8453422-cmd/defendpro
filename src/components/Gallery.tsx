@@ -63,13 +63,13 @@ export default function Gallery() {
   const handlePrev = () => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
 
   return (
-    <section id="gallery" className="pt-20 bg-[#0b0b0b] overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-6 mb-12 text-center">
-        <h2 className="text-4xl md:text-6xl font-headline font-black text-white uppercase tracking-tighter mb-4">
-          VANGUARD <span className="text-tactical-primary">GALLERY</span>
+    <section id="gallery" className="py-24 bg-tactical-bg overflow-hidden relative border-t border-white/5">
+      <div className="max-w-7xl mx-auto px-6 mb-24 text-center">
+        <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-8 leading-tight">
+          VANGUARD <span className="text-tactical-secondary">GALLERY</span>
         </h2>
-        <p className="text-tactical-muted tracking-widest uppercase text-sm font-bold">
-          Visual record of readiness
+        <p className="text-stone-500 tracking-[0.4em] uppercase text-xs font-bold">
+          VISUAL RECORD OF READINESS.
         </p>
       </div>
 

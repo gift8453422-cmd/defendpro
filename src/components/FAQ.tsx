@@ -70,23 +70,23 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-10 md:py-[60px] bg-tactical-surface px-6 relative overflow-hidden">
+    <section id="faq" className="py-24 bg-tactical-surface px-6 relative overflow-hidden border-t border-white/5">
       {/* Decorative Background Icon */}
-      <div className="absolute -bottom-20 -left-20 opacity-[0.03] pointer-events-none">
+      <div className="absolute -bottom-20 -left-20 opacity-[0.02] pointer-events-none">
         <HelpCircle size={400} className="text-tactical-primary" />
       </div>
 
       <div className="max-w-4xl mx-auto relative z-10">
-        <div className="text-center mb-10 md:mb-16">
-          <h2 className="text-4xl md:text-6xl font-headline font-black text-tactical-text uppercase tracking-tighter mb-4">
-            Tactical <span className="text-tactical-primary">Intel</span>
+        <div className="text-center mb-24">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-8 leading-tight">
+            Tactical <span className="text-tactical-secondary">Intel</span>
           </h2>
-          <p className="text-tactical-muted tracking-widest uppercase text-sm font-bold">
-            Frequently Asked Questions
+          <p className="text-stone-500 tracking-[0.4em] uppercase text-xs font-bold">
+            FREQUENTLY ASKED QUESTIONS.
           </p>
         </div>
 
-        <div className="bg-tactical-bg p-8 md:p-12 border border-tactical-muted/10 shadow-2xl">
+        <div className="bg-tactical-bg p-8 md:p-12 border border-white/5 shadow-2xl rounded-sm">
           {faqs.map((faq, index) => (
             <AccordionItem 
               key={index}
@@ -98,17 +98,17 @@ export default function FAQ() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-tactical-muted text-sm font-headline tracking-widest uppercase mb-6">
-            Still have questions?
+        <div className="mt-16 text-center">
+          <p className="text-stone-500 text-xs font-headline tracking-[0.3em] uppercase mb-6">
+            STILL HAVE QUESTIONS?
           </p>
           <a 
             href="#contact"
-            className="inline-flex items-center gap-2 text-tactical-primary font-headline font-black text-lg uppercase tracking-widest hover:brightness-110 transition-all"
+            className="inline-flex items-center gap-3 text-tactical-primary font-headline font-black text-xl uppercase tracking-widest hover:brightness-125 transition-all group"
           >
             Contact Command Center
             <motion.span
-              animate={{ x: [0, 5, 0] }}
+              animate={{ x: [0, 8, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
             >
               →
