@@ -16,7 +16,7 @@ export default function Hero() {
           disableRemotePlayback
           className="w-full h-full object-cover opacity-60"
         >
-          <source src="/hero.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dbnjgo0o2/video/upload/hero_sztvum.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0b] via-transparent to-transparent"></div>
       </div>
