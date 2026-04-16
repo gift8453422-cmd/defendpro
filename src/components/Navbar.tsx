@@ -48,13 +48,13 @@ export default function Navbar() {
             />
           </a>
 
-          {/* Desktop Nav - Centered */}
-          <div className="hidden md:flex gap-8 items-center absolute left-1/2 -translate-x-1/2">
+          {/* Desktop Nav */}
+          <div className="hidden md:flex flex-1 justify-end lg:justify-center gap-5 lg:gap-8 items-center ml-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-stone-300 hover:text-tactical-primary font-headline tracking-[0.1em] uppercase transition-all text-xs font-bold"
+                className="text-stone-300 hover:text-tactical-primary font-headline tracking-[0.1em] uppercase transition-all text-[11px] lg:text-xs font-bold whitespace-nowrap"
               >
                 {link.name}
               </a>
