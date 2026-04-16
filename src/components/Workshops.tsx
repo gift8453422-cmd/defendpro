@@ -103,7 +103,7 @@ export default function Workshops() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
             {curriculum.map((item, index) => (
               <motion.div 
                 key={item.title} 
@@ -111,13 +111,11 @@ export default function Workshops() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex flex-col gap-6 group p-8 bg-tactical-surface border border-white/5 hover:border-tactical-primary/30 transition-all duration-500 rounded-sm"
+                className="flex items-start gap-4 group"
               >
-                <div className="w-16 h-16 rounded-full bg-tactical-bg border border-white/5 flex items-center justify-center group-hover:border-tactical-primary/30 transition-colors">
-                  <item.icon className="text-tactical-primary transition-transform duration-700 group-hover:scale-110" size={32} />
-                </div>
-                <div className="flex flex-col gap-3">
-                  <h4 className="text-xl font-headline font-bold text-white tracking-tight uppercase group-hover:text-tactical-primary transition-colors">{item.title}</h4>
+                <item.icon className="text-tactical-primary shrink-0 mt-1 transition-transform duration-500 group-hover:scale-110" size={24} />
+                <div className="flex flex-col gap-1">
+                  <h4 className="text-lg font-headline font-bold text-white tracking-tight uppercase group-hover:text-tactical-primary transition-colors">{item.title}</h4>
                   <p className="text-stone-400 font-light leading-relaxed text-sm">{item.desc}</p>
                 </div>
               </motion.div>
@@ -143,7 +141,7 @@ export default function Workshops() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
             {whyDefendPro.map((item, index) => (
               <motion.div 
                 key={item.title} 
@@ -151,12 +149,10 @@ export default function Workshops() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex flex-col gap-6 group p-8 bg-tactical-surface border border-white/5 hover:border-tactical-secondary/30 transition-all duration-500 rounded-sm"
+                className="flex items-start gap-4 group"
               >
-                <div className="w-12 h-12 rounded-full bg-tactical-secondary/10 flex items-center justify-center group-hover:bg-tactical-secondary/20 transition-colors">
-                  <CheckCircle2 className="text-tactical-secondary transition-transform duration-700 group-hover:scale-110" size={24} />
-                </div>
-                <div className="flex flex-col gap-3">
+                <CheckCircle2 className="text-tactical-secondary shrink-0 mt-1 transition-transform duration-500 group-hover:scale-110" size={24} />
+                <div className="flex flex-col gap-1">
                   <h4 className="text-lg font-headline font-bold text-white tracking-tight uppercase group-hover:text-tactical-secondary transition-colors">{item.title}</h4>
                   <p className="text-stone-400 font-light leading-relaxed text-sm">{item.desc}</p>
                 </div>
