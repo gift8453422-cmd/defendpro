@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col gap-10">
           <a href="#" className="inline-block">
             <img 
-              src="/newlogo.png" 
+              src="https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776297961/IMG_20260416_053318_fbshmt.webp" 
               alt="DefendPro Academy" 
               className="h-16 md:h-24 max-w-[280px] w-auto object-contain" 
             />
