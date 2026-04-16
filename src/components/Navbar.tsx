@@ -25,13 +25,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 border-b ${scrolled ? 'bg-black/95 backdrop-blur-md border-white/10 py-2' : 'bg-transparent border-transparent py-4'}`}>
+    <nav className="fixed top-0 left-0 w-full z-[1000] transition-all duration-500 border-b bg-black/80 backdrop-blur-md border-white/10 py-3">
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center shrink-0">
           <img 
             src="https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776297961/IMG_20260416_053318_fbshmt.webp" 
             alt="DefendPro Academy" 
-            className="h-12 md:h-16 w-auto object-contain" 
+            className="h-7 md:h-8 w-auto object-contain" 
           />
         </a>
 
