@@ -36,7 +36,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-tactical-bg px-6 relative overflow-hidden border-t border-white/5">
+    <section id="contact" className="bg-tactical-bg px-6 relative overflow-hidden border-t border-white/5">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.01] z-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] border border-tactical-primary rounded-full"></div>
@@ -50,14 +50,14 @@ export default function Contact() {
             viewport={{ once: true }}
             className="text-center lg:text-left"
           >
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-8 leading-tight">
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-4 leading-tight">
               Book Your <br /><span className="text-tactical-secondary">Training</span>
             </h2>
-            <p className="text-stone-500 tracking-[0.4em] uppercase text-xs font-bold mb-12">
+            <p className="text-stone-500 tracking-[0.4em] uppercase text-xs font-bold mb-6">
               READY TO START? CHOOSE YOUR COMMAND CHANNEL.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16 max-w-md mx-auto lg:mx-0">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12 max-w-md mx-auto lg:mx-0">
               <a 
                 href="tel:7738408406" 
                 className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-sm p-6 flex flex-col items-center lg:items-start justify-center gap-2 hover:bg-white/10 hover:border-tactical-primary/50 transition-all duration-500 group"
@@ -100,9 +100,9 @@ export default function Contact() {
             className="relative w-full max-w-lg mx-auto lg:mx-0 lg:ml-auto"
           >
             <div className="bg-tactical-surface border border-white/5 p-10 rounded-sm shadow-2xl relative z-10">
-              <div className="mb-8">
+              <div className="mb-6">
                 <h3 className="text-3xl font-headline font-bold text-white mb-3 uppercase tracking-tight">Request Intel</h3>
-                <p className="text-stone-400 text-base leading-relaxed">Fill out the form below and our team will contact you to discuss your training needs.</p>
+                <p className="text-stone-400 leading-relaxed">Fill out the form below and our team will contact you to discuss your training needs.</p>
               </div>
 
               {isSuccess ? (
@@ -114,7 +114,7 @@ export default function Contact() {
                   <CheckCircle className="text-green-500" size={56} />
                   <div>
                     <h3 className="text-2xl font-headline font-bold text-white mb-3 uppercase">Message Sent!</h3>
-                    <p className="text-stone-400 text-base">Thank you for reaching out. Our team will contact you shortly.</p>
+                    <p className="text-stone-400">Thank you for reaching out. Our team will contact you shortly.</p>
                   </div>
                   <button 
                     onClick={() => setIsSuccess(false)}

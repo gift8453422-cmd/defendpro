@@ -42,10 +42,10 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 bg-tactical-bg px-6 border-t border-white/5">
+    <section id="testimonials" className="bg-tactical-bg px-6 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-8 leading-tight">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-4 leading-tight">
             CLIENT <span className="text-tactical-secondary">FEEDBACK</span>
           </h2>
           <p className="text-stone-500 tracking-[0.4em] uppercase text-xs font-bold">
@@ -73,12 +73,12 @@ export default function Testimonials() {
                 className="w-[320px] md:w-[450px] shrink-0 bg-[#0b0b0b] border border-white/5 p-10 rounded-sm flex flex-col justify-between group hover:border-tactical-primary/30 transition-all duration-700"
               >
               <div>
-                <div className="flex gap-1 mb-8">
+                <div className="flex gap-1 mb-6">
                   {[...Array(t.rating)].map((_, index) => (
                     <Star key={index} className="fill-tactical-primary text-tactical-primary" size={16} />
                   ))}
                 </div>
-                <p className="text-stone-400 leading-relaxed font-light mb-10 text-base italic">
+                <p className="text-stone-400 leading-relaxed font-light mb-6 italic">
                   "{t.text}"
                 </p>
               </div>

@@ -70,15 +70,15 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 bg-tactical-surface px-6 relative overflow-hidden border-t border-white/5">
+    <section id="faq" className="bg-tactical-surface px-6 relative overflow-hidden border-t border-white/5">
       {/* Decorative Background Icon */}
       <div className="absolute -bottom-20 -left-20 opacity-[0.02] pointer-events-none">
         <HelpCircle size={400} className="text-tactical-primary" />
       </div>
 
       <div className="max-w-4xl mx-auto relative z-10">
-        <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-8 leading-tight">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-4 leading-tight">
             Tactical <span className="text-tactical-secondary">Intel</span>
           </h2>
           <p className="text-stone-500 tracking-[0.4em] uppercase text-xs font-bold">
@@ -98,8 +98,8 @@ export default function FAQ() {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <p className="text-stone-500 text-xs font-headline tracking-[0.3em] uppercase mb-6">
+        <div className="mt-12 text-center">
+          <p className="text-stone-500 text-xs font-headline tracking-[0.3em] uppercase mb-4">
             STILL HAVE QUESTIONS?
           </p>
           <a 

@@ -45,10 +45,10 @@ const whyDefendPro = [
 
 export default function Workshops() {
   return (
-    <section id="workshops" className="py-24 bg-tactical-bg px-6 relative overflow-hidden">
+    <section id="workshops" className="bg-tactical-bg px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-8 leading-tight">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-4 leading-tight">
             Workshop <span className="text-tactical-primary">Ecosystem</span>
           </h2>
           <p className="text-stone-500 tracking-[0.4em] uppercase text-xs font-bold">
@@ -57,8 +57,8 @@ export default function Workshops() {
         </div>
 
         {/* A. WHO IT’S FOR (IMAGE CARDS) */}
-        <div className="mb-16">
-          <h3 className="text-3xl md:text-4xl font-headline font-bold text-tactical-secondary uppercase mb-12 border-l-[6px] border-tactical-secondary pl-8 tracking-tight">
+        <div className="mb-12">
+          <h3 className="text-3xl md:text-4xl font-headline font-bold text-tactical-secondary uppercase mb-6 border-l-[6px] border-tactical-secondary pl-8 tracking-tight">
             Who It's For
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -86,19 +86,19 @@ export default function Workshops() {
         </div>
 
         {/* B. WHAT WE TEACH (APPLE-STYLE PREMIUM) */}
-        <div className="mb-16 pt-16 border-t border-white/5">
+        <div className="mb-12 pt-12 border-t border-white/5">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-12"
           >
-            <span className="text-tactical-primary text-xs font-bold tracking-[0.4em] uppercase mb-6 block">CURRICULUM</span>
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-headline font-black text-white leading-tight mb-10 tracking-tighter">
+            <span className="text-tactical-primary text-xs font-bold tracking-[0.4em] uppercase mb-4 block">CURRICULUM</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-headline font-black text-white leading-tight mb-6 tracking-tighter">
               Built for <span className="text-tactical-secondary">real-world</span> survival.
             </h2>
-            <p className="text-stone-400 text-lg md:text-xl max-w-3xl font-light leading-relaxed">
+            <p className="text-stone-400 max-w-3xl font-light leading-relaxed">
               Training that goes beyond theory. Every module is designed to prepare you for unpredictable, high-pressure situations where instinct, speed, and control matter.
             </p>
           </motion.div>
@@ -116,7 +116,7 @@ export default function Workshops() {
                 <item.icon className="text-tactical-primary shrink-0 transition-transform duration-700 group-hover:scale-110 group-hover:drop-shadow-[0_0_15px_rgba(255,107,0,0.4)]" size={36} />
                 <div className="flex flex-col gap-3">
                   <h4 className="text-2xl font-headline font-bold text-white tracking-tight uppercase group-hover:text-tactical-primary transition-colors">{item.title}</h4>
-                  <p className="text-stone-400 text-base font-light leading-relaxed">{item.desc}</p>
+                  <p className="text-stone-400 font-light leading-relaxed">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -124,19 +124,19 @@ export default function Workshops() {
         </div>
 
         {/* C. WHY YOU (TRUST STRIP) - APPLE STYLE */}
-        <div className="pt-16 border-t border-white/5">
+        <div className="pt-12 border-t border-white/5">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-12"
           >
-            <span className="text-tactical-secondary text-xs font-bold tracking-[0.4em] uppercase mb-6 block">WHY DEFENDPRO</span>
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-headline font-black text-white leading-tight mb-10 tracking-tighter">
+            <span className="text-tactical-secondary text-xs font-bold tracking-[0.4em] uppercase mb-4 block">WHY DEFENDPRO</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-headline font-black text-white leading-tight mb-6 tracking-tighter">
               Because training should <span className="text-tactical-primary">work</span> when it matters.
             </h2>
-            <p className="text-stone-400 text-lg md:text-xl max-w-3xl font-light leading-relaxed">
+            <p className="text-stone-400 max-w-3xl font-light leading-relaxed">
               We don’t simulate safety. We build it. Every session is grounded in real scenarios, real pressure, and real outcomes.
             </p>
           </motion.div>
@@ -158,7 +158,7 @@ export default function Workshops() {
                 </div>
                 <div className="flex flex-col gap-3">
                   <h4 className="text-2xl font-headline font-bold text-white tracking-tight uppercase group-hover:text-tactical-secondary transition-colors">{item.title}</h4>
-                  <p className="text-stone-400 text-base font-light leading-relaxed">{item.desc}</p>
+                  <p className="text-stone-400 font-light leading-relaxed">{item.desc}</p>
                 </div>
               </motion.div>
             ))}

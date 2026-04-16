@@ -23,10 +23,10 @@ const posts = [
 
 export default function Blog() {
   return (
-    <section id="blog" className="py-24 bg-tactical-bg px-6 border-t border-white/5">
+    <section id="blog" className="bg-tactical-bg px-6 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-8 leading-tight">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-4 leading-tight">
             TACTICAL <span className="text-tactical-secondary">INSIGHTS</span>
           </h2>
           <p className="text-stone-500 tracking-[0.4em] uppercase text-xs font-bold">
@@ -56,10 +56,10 @@ export default function Blog() {
                 <span className="text-tactical-primary font-headline font-bold text-xs tracking-[0.2em] uppercase mb-4 block">
                   {post.date}
                 </span>
-                <h3 className="text-2xl font-headline font-bold text-tactical-text uppercase mb-6 group-hover:text-tactical-primary transition-colors tracking-tight leading-tight">
+                <h3 className="text-2xl font-headline font-bold text-tactical-text uppercase mb-4 group-hover:text-tactical-primary transition-colors tracking-tight leading-tight">
                   {post.title}
                 </h3>
-                <p className="text-stone-400 mb-8 font-light leading-relaxed text-base">
+                <p className="text-stone-400 mb-6 font-light leading-relaxed">
                   {post.excerpt}
                 </p>
                 <a href="#contact" className="inline-flex items-center gap-2 text-tactical-text font-headline font-bold text-xs uppercase tracking-[0.2em] group/link">

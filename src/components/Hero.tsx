@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-[#0b0b0b]"></div>
       </div>
 
-      <div className="relative z-20 max-w-7xl mx-auto px-6 w-full h-full flex flex-col justify-center pt-24 pb-12">
+      <div className="relative z-20 max-w-7xl mx-auto px-6 w-full pb-16 md:pb-24 pt-32">
         {/* Left Text */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}

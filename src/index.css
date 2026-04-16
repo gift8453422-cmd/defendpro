@@ -22,17 +22,27 @@
   --color-tactical-muted: #71717a;
 }
 
-/* Global Section Resets for Seamless Merging */
-section {
-  margin: 0;
-  display: flow-root;
-}
-
-section > *:last-child {
-  margin-bottom: 0;
-}
-
 @layer base {
+  section {
+    margin: 0;
+    display: flow-root;
+    padding: 36px 0;
+  }
+
+  @media (min-width: 768px) {
+    section {
+      padding: 48px 0;
+    }
+  }
+
+  section:first-child {
+    padding-top: 0;
+  }
+
+  section > *:last-child {
+    margin-bottom: 0;
+  }
+
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -40,7 +50,7 @@ section > *:last-child {
   }
 
   body {
-    @apply bg-tactical-bg text-tactical-text font-body overflow-x-hidden;
+    @apply bg-tactical-bg text-tactical-text font-body overflow-x-hidden text-[15px];
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -48,7 +58,7 @@ section > *:last-child {
   }
 
   p {
-    @apply leading-relaxed;
+    @apply leading-relaxed text-[14px] text-[#aaa];
   }
 }
 

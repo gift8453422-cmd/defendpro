@@ -20,10 +20,10 @@ const instructors = [
 
 export default function Instructors() {
   return (
-    <section id="instructors" className="py-24 bg-tactical-bg px-6 border-t border-white/5">
+    <section id="instructors" className="bg-tactical-bg px-6 border-t border-white/5">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-6 leading-tight">
+        <div className="mb-12">
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-headline font-black text-white uppercase tracking-tighter mb-4 leading-tight">
             Elite <span className="text-tactical-secondary">Instructors</span>
           </h2>
           <p className="text-stone-500 tracking-[0.4em] uppercase text-xs font-bold">

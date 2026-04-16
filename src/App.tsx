@@ -45,7 +45,7 @@ export default function App() {
         <ProblemSection />
 
         {/* Mission Section */}
-        <section id="mission" className="bg-tactical-bg w-full py-24 px-6 relative overflow-hidden border-t border-white/5">
+        <section id="mission" className="bg-tactical-bg w-full px-6 relative overflow-hidden border-t border-white/5">
           <div className="max-w-7xl mx-auto relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
               {/* Left Column: Title & Intro */}
@@ -73,9 +73,17 @@ export default function App() {
                   viewport={{ once: true }}
                   className="bg-white/5 border border-white/10 p-10 md:p-12 rounded-sm backdrop-blur-sm"
                 >
-                  <p className="text-lg md:text-[20px] text-[#e3e3e3] leading-relaxed font-light font-sans">
-                    At DEFENDPRO, we don't just train athletes; we forge guardians. Our philosophy is rooted in the "Tactical Vanguard" mindset—combining ruthless physical efficiency with unparalleled mental clarity. We operate at the intersection of science and instinct.
-                  </p>
+                  <div className="max-w-[600px]">
+                    <p className="text-[#aaa] text-[14px] leading-relaxed mb-4">
+                      We don’t just teach techniques — we train you to stay calm when it matters most.
+                    </p>
+                    <p className="text-[#aaa] text-[14px] leading-relaxed mb-4">
+                      In real situations, there’s no time to think. Your body reacts.
+                    </p>
+                    <p className="text-[#aaa] text-[14px] leading-relaxed">
+                      That’s why our training focuses on instinct, awareness, and control — so when pressure hits, you don’t freeze… you respond.
+                    </p>
+                  </div>
                 </motion.div>
               </div>
 
