@@ -2,8 +2,8 @@ import { ExternalLink } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0b0b0b] pt-24 pb-20 md:pb-16 px-6 border-t border-white/5">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 pb-20">
+    <footer className="bg-[#0b0b0b] pt-16 pb-8 px-6 border-t border-white/5">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 pb-16">
         
         {/* LEFT SIDE */}
         <div className="flex flex-col gap-10">
@@ -54,9 +54,12 @@ export default function Footer() {
       </div>
 
       {/* BOTTOM BAR */}
-      <div className="max-w-7xl mx-auto border-t border-white/5 py-10 text-center">
-        <p className="text-stone-600 text-[10px] font-headline uppercase tracking-[0.3em] font-bold">
-          © 2026 DEFENDPRO ACADEMY. ALL RIGHTS RESERVED.
+      <div className="max-w-7xl mx-auto border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p className="text-stone-600 text-[10px] font-headline uppercase tracking-[0.3em] font-bold text-center md:text-left">
+          © {new Date().getFullYear()} DEFENDPRO ACADEMY. ALL RIGHTS RESERVED.
+        </p>
+        <p className="text-stone-600 text-[10px] font-headline uppercase tracking-[0.3em] font-bold text-center md:text-right">
+          BUILT BY <a href="https://www.instagram.com/todayera.in?igsh=MWtucDY2cWlqMXczYg==" target="_blank" rel="noopener noreferrer" className="text-tactical-primary hover:text-white transition-colors">TODAYERA</a>
         </p>
       </div>
     </footer>

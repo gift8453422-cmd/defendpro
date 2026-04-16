@@ -103,7 +103,7 @@ export default function Workshops() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {curriculum.map((item, index) => (
               <motion.div 
                 key={item.title} 
@@ -111,12 +111,14 @@ export default function Workshops() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex items-start gap-10 group p-8 hover:bg-white/5 transition-all duration-500 rounded-sm border border-transparent hover:border-white/5"
+                className="flex flex-col gap-6 group p-8 bg-tactical-surface border border-white/5 hover:border-tactical-primary/30 transition-all duration-500 rounded-sm"
               >
-                <item.icon className="text-tactical-primary shrink-0 transition-transform duration-700 group-hover:scale-110 group-hover:drop-shadow-[0_0_15px_rgba(255,107,0,0.4)]" size={36} />
+                <div className="w-16 h-16 rounded-full bg-tactical-bg border border-white/5 flex items-center justify-center group-hover:border-tactical-primary/30 transition-colors">
+                  <item.icon className="text-tactical-primary transition-transform duration-700 group-hover:scale-110" size={32} />
+                </div>
                 <div className="flex flex-col gap-3">
-                  <h4 className="text-2xl font-headline font-bold text-white tracking-tight uppercase group-hover:text-tactical-primary transition-colors">{item.title}</h4>
-                  <p className="text-stone-400 font-light leading-relaxed">{item.desc}</p>
+                  <h4 className="text-xl font-headline font-bold text-white tracking-tight uppercase group-hover:text-tactical-primary transition-colors">{item.title}</h4>
+                  <p className="text-stone-400 font-light leading-relaxed text-sm">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -141,24 +143,22 @@ export default function Workshops() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyDefendPro.map((item, index) => (
               <motion.div 
                 key={item.title} 
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex items-start gap-10 group cursor-default p-8 hover:bg-white/5 transition-all duration-500 rounded-sm border border-transparent hover:border-white/5"
+                className="flex flex-col gap-6 group p-8 bg-tactical-surface border border-white/5 hover:border-tactical-secondary/30 transition-all duration-500 rounded-sm"
               >
-                <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0 relative">
-                  <div className="absolute inset-0 rounded-full animate-pulse opacity-50" style={{ background: 'rgba(255,200,0,0.1)' }}></div>
-                  <div className="absolute inset-0 rounded-full" style={{ background: 'rgba(255,200,0,0.05)' }}></div>
-                  <CheckCircle2 className="text-tactical-secondary relative z-10 group-hover:scale-110 transition-transform duration-500" size={28} />
+                <div className="w-12 h-12 rounded-full bg-tactical-secondary/10 flex items-center justify-center group-hover:bg-tactical-secondary/20 transition-colors">
+                  <CheckCircle2 className="text-tactical-secondary transition-transform duration-700 group-hover:scale-110" size={24} />
                 </div>
                 <div className="flex flex-col gap-3">
-                  <h4 className="text-2xl font-headline font-bold text-white tracking-tight uppercase group-hover:text-tactical-secondary transition-colors">{item.title}</h4>
-                  <p className="text-stone-400 font-light leading-relaxed">{item.desc}</p>
+                  <h4 className="text-lg font-headline font-bold text-white tracking-tight uppercase group-hover:text-tactical-secondary transition-colors">{item.title}</h4>
+                  <p className="text-stone-400 font-light leading-relaxed text-sm">{item.desc}</p>
                 </div>
               </motion.div>
             ))}

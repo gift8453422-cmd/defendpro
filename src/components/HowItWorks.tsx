@@ -45,10 +45,7 @@ export default function HowItWorks() {
         </div>
 
         <div className="relative">
-          {/* Connecting Line (Desktop Only) */}
-          <div className="hidden md:block absolute top-16 left-[15%] right-[15%] h-[1px] bg-white/10 z-0"></div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
             {steps.map((step, index) => (
               <motion.div
                 key={step.number}
@@ -56,23 +53,23 @@ export default function HowItWorks() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="flex flex-col items-center text-center group"
+                className="flex flex-col items-start text-left group bg-tactical-surface p-8 border border-white/5 hover:border-tactical-secondary/30 transition-all duration-500 rounded-sm relative overflow-hidden"
               >
-                {/* Icon & Number Container */}
-                <div className="relative mb-6">
-                  <div className="w-32 h-32 rounded-full bg-[#0e0e0e] border border-white/5 flex items-center justify-center group-hover:border-tactical-primary/30 group-hover:shadow-[0_0_40px_rgba(255,107,0,0.1)] transition-all duration-700 relative z-10">
-                    <step.icon className="text-tactical-secondary group-hover:scale-110 transition-transform duration-700" size={40} />
-                  </div>
-                  <div className="absolute -top-6 -right-6 text-7xl font-headline font-black text-white/5 select-none group-hover:text-tactical-primary/10 transition-colors duration-700">
-                    {step.number}
+                <div className="absolute -right-4 -bottom-4 text-[120px] font-headline font-black text-white/[0.02] select-none group-hover:text-tactical-secondary/[0.05] transition-colors duration-700 leading-none">
+                  {step.number}
+                </div>
+                {/* Icon Container */}
+                <div className="mb-8">
+                  <div className="w-16 h-16 rounded-full bg-tactical-bg border border-white/5 flex items-center justify-center group-hover:border-tactical-secondary/30 transition-all duration-700 relative z-10">
+                    <step.icon className="text-tactical-secondary group-hover:scale-110 transition-transform duration-700" size={24} />
                   </div>
                 </div>
 
                 {/* Content */}
-                <h3 className="text-2xl font-headline font-bold text-tactical-text uppercase mb-4 tracking-tight group-hover:text-tactical-primary transition-colors duration-500">
+                <h3 className="text-xl font-headline font-bold text-tactical-text uppercase mb-4 tracking-tight group-hover:text-tactical-secondary transition-colors duration-500 relative z-10">
                   {step.title}
                 </h3>
-                <p className="text-stone-400 leading-relaxed max-w-xs">
+                <p className="text-stone-400 leading-relaxed text-sm relative z-10">
                   {step.description}
                 </p>
               </motion.div>
