@@ -14,10 +14,15 @@ export default function Hero() {
           preload="auto"
           disablePictureInPicture
           disableRemotePlayback
-          className="w-full h-full object-cover opacity-60"
+          className="w-full h-full object-cover object-[75%_center] md:object-center opacity-100 scale-[1.01]"
         >
           <source src="https://res.cloudinary.com/dyyvibn56/video/upload/q_auto/f_auto/v1776608379/hero2_ghwflm.mp4" type="video/mp4" />
         </video>
+        {/* Subtle static overlay for text readability */}
+        <div className="absolute inset-0 bg-black/40"></div>
+        {/* Left-to-right gradient for text readability on mobile and desktop */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
+        {/* Bottom fade into the next section */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-[#0b0b0b]"></div>
       </div>
 

@@ -73,11 +73,11 @@ export default function Workshops() {
               >
                 <img 
                   src={sector.img} 
-                  className="absolute inset-0 w-full h-full object-cover grayscale contrast-125 group-hover:scale-110 group-hover:grayscale-0 transition-all duration-1000"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-1000"
                   alt={sector.name}
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent opacity-90 group-hover:opacity-70 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-10 w-full">
                   <h4 className="text-2xl font-headline font-bold text-white tracking-tight uppercase group-hover:text-tactical-primary transition-colors">{sector.name}</h4>
                 </div>

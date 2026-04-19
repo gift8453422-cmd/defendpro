@@ -96,9 +96,9 @@ export default function App() {
                   viewport={{ once: true }}
                   className="group"
                 >
-                  <div className="text-6xl font-headline font-bold text-tactical-primary mb-3 opacity-40 group-hover:opacity-100 transition-opacity">01</div>
+                  <div className="text-6xl font-headline font-bold text-tactical-primary mb-3 opacity-40 group-hover:opacity-100 transition-opacity">•</div>
                   <div className="text-sm font-headline font-bold tracking-[0.4em] text-tactical-secondary uppercase mb-4">PRECISION</div>
-                  <p className="text-stone-400 leading-relaxed text-lg">Every movement serves a purpose. No wasted energy in the field of operation. We refine your technique until it becomes second nature.</p>
+                  <p className="text-stone-400 leading-relaxed text-lg">Every movement serves a purpose. High efficiency in the field of operation. We refine your technique until it becomes second nature.</p>
                 </motion.div>
                 
                 <motion.div
@@ -108,7 +108,7 @@ export default function App() {
                   viewport={{ once: true }}
                   className="group"
                 >
-                  <div className="text-6xl font-headline font-bold text-tactical-primary mb-3 opacity-40 group-hover:opacity-100 transition-opacity">02</div>
+                  <div className="text-6xl font-headline font-bold text-tactical-primary mb-3 opacity-40 group-hover:opacity-100 transition-opacity">•</div>
                   <div className="text-sm font-headline font-bold tracking-[0.4em] text-tactical-secondary uppercase mb-4">RESILIENCE</div>
                   <p className="text-stone-400 leading-relaxed text-lg">Forging minds that remain calm and lethal under extreme environmental pressure. We build the mental fortitude required for survival.</p>
                 </motion.div>
@@ -129,7 +129,7 @@ export default function App() {
                   loop 
                   muted 
                   playsInline
-                  className="w-full h-full object-cover grayscale brightness-75 contrast-125 transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 object-top"
+                  className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-105 object-top"
                 >
                   <source src="https://res.cloudinary.com/dbnjgo0o2/video/upload/hero_sztvum.mp4" type="video/mp4" />
                 </video>

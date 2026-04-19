@@ -1,29 +1,40 @@
 import { motion, AnimatePresence } from 'motion/react';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { defendproIntroMarkdown } from '../content/article';
+import { defendproIntroMarkdown, awarenessToActionMarkdown } from '../content/article';
 import { useState, useEffect } from 'react';
 import { X, Loader2 } from 'lucide-react';
 
 const DUMMY_POSTS = [
   {
+    title: "From Awareness to Action: How Real Training Builds Confidence",
+    category: "Tactical Insights",
+    excerpt: "Recognizing safety risks is a vital first step, yet it frequently reveals the opportunity to prepare for action if a real situation arises. Decisiveness is a key to safety.",
+    date: "FEATURED INTEL",
+    image: "https://res.cloudinary.com/dyyvibn56/image/upload/v1776610681/From_Awareness_to_Action_rrnceo.jpg",
+    content: awarenessToActionMarkdown,
+  },
+  {
     title: "The Vanguard Mindset: Welcome to DefendPro",
     category: "Company News",
     excerpt: "Safety requires proactive preparation. In a world of evolving environments, awareness paired with decisive action ensures security. You are always prepared to act.",
-    date: "FEATURED INTEL",
+    date: "LATEST DISPATCH",
+    image: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776295675/20197_d4cqaz.jpg",
     content: defendproIntroMarkdown,
   },
   {
     title: "Urban Awareness Mastery",
     category: "Tactical Insights",
-    excerpt: "Spot potential threats before they escalate in a crowded urban environment. Master the art of environmental scanning and anomaly detection.",
+    excerpt: "Observe your surroundings and identify anomalies before they escalate. Master the art of environmental scanning and situation detection.",
     date: "ARCHIVED DISPATCH",
+    image: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776294241/corporate_1_egerbn.jpg",
   },
   {
     title: "The Psychology of Survival",
     category: "Training Tips",
-    excerpt: "Understand the biological response to extreme pressure and override hesitation with advanced tactical conditioning.",
+    excerpt: "Understand the biological response to extreme pressure and achieve tactical conditioning. Balance your instinct with refined responses.",
     date: "ARCHIVED DISPATCH",
+    image: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776294657/one_and_one_1_qexm6c.jpg",
   }
 ];
 
@@ -98,12 +109,14 @@ export default function Blog() {
                 exit={{ opacity: 0 }}
                 className="flex flex-col w-full"
               >
-                {[1, 2, 3].map((skel) => (
+                {Array.from({ length: 3 }).map((_, skel) => (
                   <div key={skel} className="w-full border-b border-white/5 py-12 lg:py-16 flex flex-col lg:flex-row gap-6 lg:gap-16">
-                    <div className="lg:w-1/4 shrink-0 mt-2">
+                    <div className="lg:w-1/4 shrink-0 mt-2 flex flex-col gap-4">
                        <div className="h-4 bg-white/5 rounded-sm w-32 animate-pulse"></div>
+                       <div className="aspect-video lg:aspect-square w-full bg-white/5 rounded-sm animate-pulse hidden lg:block"></div>
                     </div>
                     <div className="lg:w-3/4 flex flex-col gap-4">
+                      <div className="aspect-video w-full bg-white/5 rounded-sm animate-pulse lg:hidden mb-4"></div>
                       <div className="h-8 md:h-10 bg-white/5 rounded-sm w-3/4 animate-pulse"></div>
                       <div className="h-4 bg-white/5 rounded-sm w-full animate-pulse mt-2"></div>
                       <div className="h-4 bg-white/5 rounded-sm w-5/6 animate-pulse"></div>
@@ -122,21 +135,31 @@ export default function Blog() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.5 }}
-                  className="w-full border-b border-white/5 py-12 lg:py-16 flex flex-col lg:flex-row gap-6 lg:gap-16 group relative"
+                  className="w-full border-b border-white/5 py-12 lg:py-16 flex flex-col lg:flex-row gap-8 lg:gap-16 group relative"
                 >
-                  {/* Meta information */}
-                  <div className="lg:w-1/4 shrink-0 mt-2">
+                  {/* Meta & Thumbnail (Desktop Left) */}
+                  <div className="lg:w-1/3 xl:w-1/4 shrink-0 mt-2 flex flex-col gap-6">
                     <span className="text-tactical-secondary font-headline font-bold text-[10px] tracking-[0.2em] uppercase">
                       {post.date}
                     </span>
+                    {post.image && (
+                      <div className="aspect-video lg:aspect-square w-full overflow-hidden border border-white/5 group-hover:border-tactical-primary/30 transition-colors">
+                        <img 
+                          src={post.image} 
+                          alt={post.title} 
+                          referrerPolicy="no-referrer"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" 
+                        />
+                      </div>
+                    )}
                   </div>
                   
                   {/* Content Preview */}
-                  <div className="lg:w-3/4">
-                    <h3 className="text-3xl md:text-4xl font-headline font-bold text-white uppercase tracking-tight mb-6 group-hover:text-tactical-primary transition-colors leading-tight">
+                  <div className="lg:w-2/3 xl:w-3/4">
+                    <h3 className="text-3xl md:text-3xl lg:text-4xl font-headline font-bold text-white uppercase tracking-tight mb-6 group-hover:text-tactical-primary transition-colors leading-tight">
                       {post.title}
                     </h3>
-                    <p className="text-stone-400 font-light text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
+                    <p className="text-stone-400 font-light text-base md:text-lg leading-relaxed mb-8 max-w-2xl line-clamp-3">
                       {post.excerpt}
                     </p>
                     {post.content ? (
