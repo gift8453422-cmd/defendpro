@@ -115,13 +115,13 @@ export default function App() {
               </div>
             </div>
 
-            {/* Featured Image/Video Section - Seamlessly Integrated */}
+            {/* Featured Image/Video Section */}
             <motion.div 
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="relative w-full mt-24 mb-16 aspect-video md:aspect-[21/9] overflow-hidden group"
+              className="relative w-full mt-24 mb-16 aspect-video md:aspect-[21/9] overflow-hidden rounded-sm"
             >
               <div className="absolute inset-0 z-0">
                 <video 
@@ -131,20 +131,10 @@ export default function App() {
                   playsInline
                   disablePictureInPicture
                   disableRemotePlayback
-                  className="w-full h-full object-cover origin-center opacity-80"
+                  className="w-full h-full object-cover origin-center"
                 >
                   <source src="https://res.cloudinary.com/dbnjgo0o2/video/upload/hero_sztvum.mp4" type="video/mp4" />
                 </video>
-              </div>
-              
-               {/* Edge Gradients for seamless integration to the `#0b0b0b` tactical background */}
-              <div className="absolute inset-0 bg-gradient-to-t from-tactical-bg via-transparent to-transparent z-10"></div>
-              <div className="absolute inset-0 bg-gradient-to-b from-tactical-bg via-transparent to-transparent z-10"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-tactical-bg via-transparent to-tactical-bg z-10"></div>
-
-              <div className="absolute bottom-4 right-4 md:bottom-10 md:right-10 bg-tactical-primary p-6 md:p-8 min-w-[200px] shadow-2xl z-20">
-                <div className="text-4xl md:text-6xl font-headline font-black text-tactical-bg leading-none">9+</div>
-                <div className="text-[10px] md:text-xs font-headline font-bold tracking-[0.2em] text-tactical-bg uppercase mt-2 md:mt-3">YEARS OF ELITE EXPERTISE</div>
               </div>
             </motion.div>
           </div>
