@@ -10,8 +10,8 @@ export default function ProblemSection() {
     },
     {
       icon: ShieldAlert,
-      title: "Theoretical Training Fails",
-      desc: "Most programs focus on demos. We focus on high-stress drills that simulate actual threats."
+      title: "Train for Instinct, Not Just Knowledge.",
+      desc: "We develop real responses through pressure-based scenarios that mirror real situations"
     },
     {
       icon: AlertTriangle,

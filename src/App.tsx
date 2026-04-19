@@ -115,28 +115,36 @@ export default function App() {
               </div>
             </div>
 
-            {/* Featured Image Section */}
+            {/* Featured Image/Video Section - Seamlessly Integrated */}
             <motion.div 
-              initial={{ opacity: 0, scale: 0.98 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="relative w-full mt-24 group"
+              className="relative w-full mt-24 mb-16 aspect-video md:aspect-[21/9] overflow-hidden group"
             >
-              <div className="aspect-[21/9] bg-tactical-bg flex items-center justify-center p-2 border border-white/5 overflow-hidden">
+              <div className="absolute inset-0 z-0">
                 <video 
                   autoPlay 
                   loop 
                   muted 
                   playsInline
-                  className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-105 object-top"
+                  disablePictureInPicture
+                  disableRemotePlayback
+                  className="w-full h-full object-cover origin-center opacity-80"
                 >
                   <source src="https://res.cloudinary.com/dbnjgo0o2/video/upload/hero_sztvum.mp4" type="video/mp4" />
                 </video>
               </div>
-              <div className="absolute -bottom-10 right-10 bg-tactical-primary p-8 min-w-[240px] shadow-2xl z-20 hidden md:block">
-                <div className="text-6xl font-headline font-black text-tactical-bg leading-none">9+</div>
-                <div className="text-xs font-headline font-bold tracking-[0.2em] text-tactical-bg uppercase mt-3">YEARS OF ELITE EXPERTISE</div>
+              
+               {/* Edge Gradients for seamless integration to the `#0b0b0b` tactical background */}
+              <div className="absolute inset-0 bg-gradient-to-t from-tactical-bg via-transparent to-transparent z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-tactical-bg via-transparent to-transparent z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-tactical-bg via-transparent to-tactical-bg z-10"></div>
+
+              <div className="absolute bottom-4 right-4 md:bottom-10 md:right-10 bg-tactical-primary p-6 md:p-8 min-w-[200px] shadow-2xl z-20">
+                <div className="text-4xl md:text-6xl font-headline font-black text-tactical-bg leading-none">9+</div>
+                <div className="text-[10px] md:text-xs font-headline font-bold tracking-[0.2em] text-tactical-bg uppercase mt-2 md:mt-3">YEARS OF ELITE EXPERTISE</div>
               </div>
             </motion.div>
           </div>

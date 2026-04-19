@@ -51,7 +51,7 @@ const DUMMY_POSTS = [
     category: "Tactical Insights",
     excerpt: "Self-reliance is the ultimate expression of personal empowerment. It is the realization that you are responsible for your own safety.",
     date: "ARCHIVED DISPATCH",
-    image: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776295679/19990_i2r9dm.jpg",
+    image: "https://res.cloudinary.com/dyyvibn56/image/upload/v1776613699/Abstract_line_art_202604192050_duqrlx.jpg",
     content: tacticalSelfRelianceMarkdown,
   }
 ];
