@@ -1,25 +1,25 @@
 export const defendproIntroMarkdown = `
 # The Vanguard Mindset: Welcome to DefendPro
 
-Safety is no longer guaranteed by location or time of day. In a world where unpredictable incidents are on the rise, **awareness is not enough**. You must be prepared to act. 
+Safety requires proactive preparation. In a world of evolving environments, **awareness paired with decisive action** ensures security. You are always prepared to act.
 
-DefendPro Academy was built on a single, uncompromising principle: *Theoretical training fails when adrenaline hits.* 
+DefendPro Academy stands on a singular, uncompromising principle: *Practical, stress-tested training creates true readiness.*
 
-We don't teach you how to fight for sport; we train your nervous system to respond to extreme stress with calculated, effective action.
+We train your nervous system to respond to extreme stress with calculated, effective action, prioritizing absolute survival over sport.
 
-## Why We Are Different
+## The DefendPro Advantage
 
-Most self-defense programs teach you a list of techniques in a sterile, cooperative environment. When a real threat appears, the "fight, flight, or freeze" response takes over. If you haven't been stress-tested, you will freeze.
+Many programs focus on theoretical techniques in cooperative environments. When a real threat appears, survival demands immediate physical and mental adaptation. We ensure your body and mind remain ready.
 
-* **Real-World Stress Testing:** We simulate the adrenaline dump.
-* **Instinctual Reaction:** We don't teach 50 moves; we teach 5 principles that work in 50 situations.
-* **De-escalation First:** Violence is always the last resort. We train you to spot anomalies before they become threats.
+* **Real-World Stress Testing:** We replicate adrenaline-heavy scenarios to forge unbreakable focus.
+* **Instinctual Reaction:** We focus on core, adaptable principles that apply seamlessly across complex situations.
+* **De-escalation First:** Avoidance remains the ultimate victory. We train you to spot anomalies early and defuse tension expertly.
 
 ### For The Modern Guardian
 
-Whether you are a corporate professional navigating urban risk, a parent ensuring your family's safety, or someone dealing with late-night commutes, DefendPro equips you with the **tactical intelligence** needed to survive and thrive.
+Whether you are a corporate professional navigating urban environments, a parent prioritizing family safety, or a commuter owning the night, DefendPro equips you with the **tactical intelligence** required to thrive.
 
-> "We don’t simulate safety. We build it. Every session is grounded in real scenarios, real pressure, and real outcomes."
+> "We build absolute safety. Every session is grounded in real scenarios, real pressure, and genuine outcomes."
 
-Prepare yourself. Not just physically, but mentally. Welcome to the Vanguard. Welcome to **DefendPro Academy**.
+Forging the mind and body together. Welcome to the Vanguard. Welcome to **DefendPro Academy**.
 `;
