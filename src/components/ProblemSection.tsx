@@ -10,7 +10,7 @@ export default function ProblemSection() {
     },
     {
       icon: ShieldAlert,
-      title: "No practical training",
+      title: "Theoretical Training Fails",
       desc: "Most programs focus on demos. We focus on high-stress drills that simulate actual threats."
     },
     {

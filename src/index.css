@@ -62,6 +62,42 @@
   }
 }
 
+@layer utilities {
+  .markdown-body {
+    @apply text-stone-400 font-light text-base leading-relaxed;
+  }
+  .markdown-body h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-headline font-black text-white uppercase tracking-tighter mb-8 mt-10 leading-tight border-b border-white/10 pb-6;
+  }
+  .markdown-body h2 {
+    @apply text-2xl md:text-3xl font-headline font-bold text-white uppercase tracking-tight mb-6 mt-12;
+  }
+  .markdown-body h3 {
+    @apply text-xl font-headline font-bold text-tactical-primary uppercase tracking-wide mb-4 mt-8;
+  }
+  .markdown-body p {
+    @apply mb-6 text-[#aaa] text-base leading-loose;
+  }
+  .markdown-body strong {
+    @apply text-white font-bold;
+  }
+  .markdown-body em {
+    @apply text-tactical-secondary not-italic font-bold tracking-wide uppercase text-sm;
+  }
+  .markdown-body ul {
+    @apply list-none pl-0 mb-8 space-y-4;
+  }
+  .markdown-body ul li {
+    @apply relative pl-8 before:content-[''] before:absolute before:left-0 before:top-3 before:w-3 before:h-px before:bg-tactical-primary;
+  }
+  .markdown-body blockquote {
+    @apply border-l-4 border-tactical-primary pl-6 my-8 italic text-stone-300 py-2 bg-white/[0.02];
+  }
+  .markdown-body a {
+    @apply text-tactical-secondary underline decoration-tactical-secondary/30 underline-offset-4 hover:decoration-tactical-secondary transition-all;
+  }
+}
+
 .text-shadow-tactical {
   text-shadow: 0 4px 24px rgba(0, 0, 0, 0.9);
 }

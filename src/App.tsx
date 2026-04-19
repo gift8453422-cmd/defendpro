@@ -75,7 +75,7 @@ export default function App() {
                 >
                   <div className="max-w-[600px]">
                     <p className="text-[#aaa] text-[14px] leading-relaxed mb-4">
-                      We don’t just teach techniques — we train you to stay calm when it matters most.
+                      We don’t just teach techniques. We train you to stay calm when it matters most.
                     </p>
                     <p className="text-[#aaa] text-[14px] leading-relaxed mb-4">
                       In real situations, there’s no time to think. Your body reacts.

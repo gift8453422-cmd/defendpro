@@ -3,14 +3,14 @@ import { Shield, Award, Star } from 'lucide-react';
 
 const instructors = [
   {
-    name: 'Ravi',
+    name: 'Ravi Sonigra',
     role: 'Lead Tactical Instructor',
     expertise: 'Tactical Combat & Self-Defense',
     bio: 'With over a decade of experience in martial arts and tactical training, Ravi specializes in high-pressure combat scenarios and real-world defense techniques. He has trained hundreds of individuals in effective survival strategies.',
     image: '/19965.jpg'
   },
   {
-    name: 'Specialist X',
+    name: 'Rahul Pasi',
     role: 'Tactical Specialist',
     expertise: 'Stealth & Urban Survival',
     bio: 'A specialist in urban survival and situational awareness, our anonymous instructor brings years of field experience in security and tactical operations. Expertise includes threat detection and non-verbal de-escalation.',
