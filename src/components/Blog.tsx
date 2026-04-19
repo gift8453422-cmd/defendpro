@@ -7,7 +7,7 @@ import { X, Loader2 } from 'lucide-react';
 
 const DUMMY_POSTS = [
   {
-    title: "From Awareness to Action: How Real Training Builds Confidence",
+    title: "Awareness To Action",
     category: "Tactical Insights",
     excerpt: "Recognizing safety risks is a vital first step, yet it frequently reveals the opportunity to prepare for action if a real situation arises.",
     date: "FEATURED INTEL",
@@ -15,7 +15,7 @@ const DUMMY_POSTS = [
     content: awarenessToActionMarkdown,
   },
   {
-    title: "The Vanguard Mindset: Welcome to DefendPro",
+    title: "The Vanguard Mindset",
     category: "Company News",
     excerpt: "Safety requires proactive preparation. In a world of evolving environments, awareness paired with decisive action ensures security.",
     date: "LATEST DISPATCH",
@@ -23,7 +23,7 @@ const DUMMY_POSTS = [
     content: defendproIntroMarkdown,
   },
   {
-    title: "Urban Awareness Mastery: Navigating Modern Environments",
+    title: "Urban Awareness Mastery",
     category: "Tactical Insights",
     excerpt: "Living in a vibrant city requires a specialized mindset. Mastery over your own awareness allows you to navigate these spaces with confidence.",
     date: "ARCHIVED DISPATCH",
@@ -31,7 +31,7 @@ const DUMMY_POSTS = [
     content: urbanAwarenessMarkdown,
   },
   {
-    title: "The Psychology of Survival: Mindset Over Force",
+    title: "The Psychology of Survival",
     category: "Training Tips",
     excerpt: "Survival is as much a mental game as it is a physical one. Understanding and mastering this biological response is the foundation of defense.",
     date: "ARCHIVED DISPATCH",
@@ -39,7 +39,7 @@ const DUMMY_POSTS = [
     content: psychologySurvivalMarkdown,
   },
   {
-    title: "Building Tactical Resilience: Strength from Within",
+    title: "Tactical Resilience",
     category: "Training Tips",
     excerpt: "Tactical resilience is the ability to adapt and recover in the face of adversity. Discover the internal shield that protects your will to survive.",
     date: "ARCHIVED DISPATCH",
@@ -47,7 +47,7 @@ const DUMMY_POSTS = [
     content: mentalFortitudeMarkdown,
   },
   {
-    title: "The Art of Tactical Self-Reliance: Owning Your Safety",
+    title: "Tactical Self-Reliance",
     category: "Tactical Insights",
     excerpt: "Self-reliance is the ultimate expression of personal empowerment. It is the realization that you are responsible for your own safety.",
     date: "ARCHIVED DISPATCH",
@@ -141,7 +141,7 @@ export default function Blog() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.5 }}
-                  className="group relative aspect-video md:aspect-square lg:aspect-video overflow-hidden cursor-pointer bg-tactical-surface border border-white/5 shadow-2xl"
+                  className="group relative h-[280px] sm:h-auto sm:aspect-video lg:aspect-[16/10] overflow-hidden cursor-pointer bg-tactical-surface border border-white/5 shadow-2xl"
                   onClick={() => post.content && setActivePostContent(post.content)}
                 >
                   {/* Background Image */}
@@ -171,17 +171,17 @@ export default function Blog() {
                       whileHover={{ y: -10 }}
                       transition={{ duration: 0.4 }}
                     >
-                      <div className="flex items-center gap-3">
-                        <span className="text-tactical-primary font-headline font-bold text-[10px] tracking-[0.3em] uppercase">
+                      <div className="flex flex-wrap items-center gap-2 md:gap-3">
+                        <span className="text-tactical-primary font-headline font-bold text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-[0.3em] uppercase">
                           {post.date}
                         </span>
-                        <span className="w-1 h-1 bg-white/20 rounded-full"></span>
-                        <span className="text-stone-400 font-headline font-bold text-[10px] tracking-[0.2em] uppercase">
+                        <span className="w-1 h-1 bg-white/20 rounded-full shrink-0"></span>
+                        <span className="text-stone-300 font-headline font-bold text-[9px] md:text-[10px] tracking-[0.1em] md:tracking-[0.2em] uppercase shrink-0">
                           {post.category}
                         </span>
                       </div>
                       
-                      <h3 className="text-xl sm:text-2xl md:text-3xl font-headline font-black text-white uppercase tracking-tight group-hover:text-tactical-primary transition-colors leading-tight">
+                      <h3 className="text-2xl sm:text-3xl md:text-4xl font-headline font-black text-white uppercase tracking-tight group-hover:text-tactical-primary transition-colors leading-tight">
                         {post.title}
                       </h3>
                       
