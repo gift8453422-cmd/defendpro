@@ -4,7 +4,7 @@ import { Building2, Shield, Award, Clock, Users2, CheckCircle2 } from 'lucide-re
 const sectors = [
   { 
     name: 'Corporate', 
-    img: 'https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776294241/corporate_1_egerbn.jpg',
+    img: 'https://res.cloudinary.com/dyyvibn56/image/upload/v1776601578/Women_Empowerment_t5kjzn.jpg',
   },
   { 
     name: 'Women Groups', 
@@ -12,11 +12,11 @@ const sectors = [
   },
   { 
     name: 'Societies', 
-    img: 'https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776294240/womensafety_1_ernchj.jpg',
+    img: 'https://res.cloudinary.com/dyyvibn56/image/upload/v1776602381/Society1_lrisca.jpg',
   },
   { 
     name: 'NGOs', 
-    img: 'https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776294240/womensafety_1_ernchj.jpg',
+    img: 'https://res.cloudinary.com/dyyvibn56/image/upload/v1776601578/NGOs_qi6v8k.jpg',
   },
   {
     name: 'Education Institutes',
@@ -24,7 +24,7 @@ const sectors = [
   },
   {
     name: 'Personal 1-on-1 Training',
-    img: 'https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776294240/one_and_one_ot6rnz.jpg',
+    img: 'https://res.cloudinary.com/dyyvibn56/image/upload/v1776602150/One_andone_mkjlka.jpg',
   }
 ];
 
@@ -75,6 +75,7 @@ export default function Workshops() {
                   src={sector.img} 
                   className="absolute inset-0 w-full h-full object-cover grayscale contrast-125 group-hover:scale-110 group-hover:grayscale-0 transition-all duration-1000"
                   alt={sector.name}
+                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent opacity-90 group-hover:opacity-70 transition-opacity"></div>
                 <div className="absolute bottom-0 left-0 p-10 w-full">

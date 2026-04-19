@@ -12,6 +12,7 @@ export default function Footer() {
               src="https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776297961/IMG_20260416_053318_fbshmt.webp" 
               alt="DefendPro Academy" 
               className="h-16 md:h-24 max-w-[280px] w-auto object-contain" 
+              referrerPolicy="no-referrer"
             />
           </a>
 
@@ -29,7 +30,7 @@ export default function Footer() {
             <div>
               <h4 className="text-tactical-primary font-headline font-bold uppercase tracking-[0.2em] mb-6 text-[10px]">External</h4>
               <nav className="flex flex-col gap-4">
-                <a href="https://maps.app.goo.gl/zKwD3AhdwSdw8k5s8" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-stone-500 hover:text-white font-headline text-xs uppercase tracking-[0.15em] transition-colors">
+                <a href="https://maps.app.goo.gl/amUFUEC6ukH1mQUv7?g_st=ac" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-stone-500 hover:text-white font-headline text-xs uppercase tracking-[0.15em] transition-colors">
                   Google Business <ExternalLink size={12} />
                 </a>
                 <a href="https://www.instagram.com/defendproacademy" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-stone-500 hover:text-white font-headline text-xs uppercase tracking-[0.15em] transition-colors">

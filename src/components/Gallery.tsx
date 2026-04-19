@@ -23,7 +23,7 @@ const images = [
     category: "Workshop"
   },
   {
-    url: "https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776295677/20012_shscil.jpg",
+    url: "https://res.cloudinary.com/dyyvibn56/image/upload/v1776602952/teamgaurd_tvub2s.jpg",
     title: "Team Vanguard",
     category: "Community"
   },
@@ -50,7 +50,7 @@ export default function Gallery() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 4000); // Slowed down from 2500ms to 4000ms
+    }, 6000); // Slowed down significantly based on feedback
     return () => clearInterval(timer);
   }, []);
 
@@ -115,7 +115,7 @@ export default function Gallery() {
           return (
             <div
               key={index}
-              className="absolute w-[260px] md:w-[400px] h-[300px] md:h-[450px] rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out"
+              className="absolute w-[260px] md:w-[400px] h-[300px] md:h-[450px] rounded-2xl overflow-hidden cursor-pointer transition-all duration-1000 ease-in-out"
               style={{
                 left: '50%',
                 top: '50%',
@@ -132,6 +132,7 @@ export default function Gallery() {
                 alt={image.title}
                 className="w-full h-full object-cover select-none"
                 loading="eager"
+                referrerPolicy="no-referrer"
               />
               
               <div 
@@ -146,13 +147,15 @@ export default function Gallery() {
           );
         })}
         
-        {/* Navigation Arrows - Moved lower to avoid overlapping text */}
-        <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex gap-4 z-30">
-          <button onClick={handlePrev} className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 hover:border-tactical-primary/50 transition-all backdrop-blur-sm">
-            <ChevronLeft size={20} />
+        {/* Navigation Arrows - Repositioned to center-sides for direct interaction */}
+        <div className="absolute top-1/2 -translate-y-1/2 left-4 md:left-12 flex gap-4 z-50">
+          <button onClick={handlePrev} className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-black/60 border border-white/20 flex items-center justify-center text-white hover:bg-tactical-primary hover:border-tactical-primary hover:text-black transition-all backdrop-blur-md shadow-2xl">
+            <ChevronLeft size={28} />
           </button>
-          <button onClick={handleNext} className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 hover:border-tactical-primary/50 transition-all backdrop-blur-sm">
-            <ChevronRight size={20} />
+        </div>
+        <div className="absolute top-1/2 -translate-y-1/2 right-4 md:right-12 flex gap-4 z-50">
+          <button onClick={handleNext} className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-black/60 border border-white/20 flex items-center justify-center text-white hover:bg-tactical-primary hover:border-tactical-primary hover:text-black transition-all backdrop-blur-md shadow-2xl">
+            <ChevronRight size={28} />
           </button>
         </div>
       </div>

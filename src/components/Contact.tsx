@@ -85,7 +85,7 @@ export default function Contact() {
                 <p className="text-[10px] font-headline font-bold text-stone-500 uppercase tracking-[0.2em]">Instagram</p>
                 <p className="text-sm font-bold text-tactical-text group-hover:text-tactical-primary transition-colors">@defendproacademy</p>
               </a>
-              <a href="https://maps.google.com/?q=Mumbai,Maharashtra" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center lg:items-start gap-2 group">
+              <a href="https://maps.app.goo.gl/amUFUEC6ukH1mQUv7?g_st=ac" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center lg:items-start gap-2 group">
                 <MapPin className="text-tactical-primary group-hover:scale-110 transition-transform duration-500" size={20} />
                 <p className="text-[10px] font-headline font-bold text-stone-500 uppercase tracking-[0.2em]">Location</p>
                 <p className="text-sm font-bold text-tactical-text group-hover:text-tactical-primary transition-colors">Mumbai, Maharashtra</p>

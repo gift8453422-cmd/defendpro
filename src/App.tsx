@@ -124,12 +124,15 @@ export default function App() {
               className="relative w-full mt-24 group"
             >
               <div className="aspect-[21/9] bg-tactical-bg flex items-center justify-center p-2 border border-white/5 overflow-hidden">
-                <img 
-                  className="w-full h-full object-cover grayscale brightness-75 contrast-125 transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105" 
-                  src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1600&auto=format&fit=crop"
-                  alt="Elite Training"
-                  referrerPolicy="no-referrer"
-                />
+                <video 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="w-full h-full object-cover grayscale brightness-75 contrast-125 transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 object-top"
+                >
+                  <source src="https://res.cloudinary.com/dbnjgo0o2/video/upload/hero_sztvum.mp4" type="video/mp4" />
+                </video>
               </div>
               <div className="absolute -bottom-10 right-10 bg-tactical-primary p-8 min-w-[240px] shadow-2xl z-20 hidden md:block">
                 <div className="text-6xl font-headline font-black text-tactical-bg leading-none">9+</div>

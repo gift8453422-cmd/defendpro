@@ -45,6 +45,7 @@ export default function Navbar() {
               src="https://res.cloudinary.com/dbnjgo0o2/image/upload/v1776297961/IMG_20260416_053318_fbshmt.webp" 
               alt="DefendPro Academy" 
               className="h-7 md:h-8 w-auto object-contain" 
+              referrerPolicy="no-referrer"
             />
           </a>
 

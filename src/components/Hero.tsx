@@ -16,7 +16,7 @@ export default function Hero() {
           disableRemotePlayback
           className="w-full h-full object-cover opacity-60"
         >
-          <source src="https://res.cloudinary.com/dbnjgo0o2/video/upload/hero_sztvum.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dyyvibn56/video/upload/q_auto/f_auto/v1776608379/hero2_ghwflm.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-[#0b0b0b]"></div>
       </div>
@@ -52,20 +52,29 @@ export default function Hero() {
             EVERYTHING.
           </h1>
 
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+          <div className="flex flex-col sm:flex-row gap-5 mt-4">
             <a 
               href="#contact" 
-              className="bg-tactical-primary text-tactical-bg px-10 py-5 font-headline font-black uppercase tracking-widest hover:-translate-y-1 transition-all duration-500 rounded-sm shadow-2xl shadow-tactical-primary/20 text-center"
+              className="group relative bg-[#ff5f1f] text-black px-10 py-5 font-headline font-black uppercase tracking-[0.2em] hover:-translate-y-1 transition-all duration-500 rounded-sm overflow-hidden text-center"
               aria-label="Initiate tactical training"
             >
-              Initiate Training
+              <span className="relative z-10 flex items-center justify-center gap-3">
+                Initiate Training
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </span>
+              <div className="absolute inset-0 bg-white/20 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out z-0 skew-x-12 scale-150"></div>
+              {/* Pulsing glow behind button */}
+              <div className="absolute -inset-2 bg-tactical-primary opacity-30 blur-xl rounded-full group-hover:opacity-60 transition-opacity duration-500 -z-10"></div>
             </a>
+            
             <a 
               href="#mission" 
-              className="bg-white/5 backdrop-blur-md border border-white/10 text-white px-10 py-5 font-headline font-black uppercase tracking-widest hover:bg-white/10 transition-all duration-500 rounded-sm text-center"
+              className="group relative bg-transparent border-2 border-white/20 text-white px-10 py-5 font-headline font-black uppercase tracking-[0.2em] backdrop-blur-md hover:border-white hover:bg-white text-center hover:text-black transition-all duration-500 rounded-sm"
               aria-label="Learn about our mission"
             >
-              Our Mission
+              <span className="relative z-10 flex items-center justify-center gap-3">
+                Our Mission
+              </span>
             </a>
           </div>
         </motion.div>
